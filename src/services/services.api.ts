@@ -1,17 +1,17 @@
-import type { DataAPI } from './apiData'
+import type { Transaction, TransactionsData } from '@/types/transactionData'
 import $axios from './axios.api'
 import paramsSerializer from '@/utils/paramsSerializer'
 
 const path = {
-  getProject: () => 'project',
-  getProjectWithParams: (params: Record<string, string[]>) => `/project?${paramsSerializer(params)}`
+  getProject: '/project',
+  postProjectWithParams: '/updateDB'
 }
 
 export const $axiosInstance = {
-  getProject: async (): Promise<DataAPI[]> => {
-    return (await $axios.get(path.getProject())).data
+  getProject: async (): Promise<TransactionsData> => {
+    return (await $axios.get(path.getProject)).data
   },
-  getProjectWithParams: async (params: Record<string, string[]>): Promise<DataAPI[]> => {
-    return (await $axios.get(path.getProjectWithParams(params))).data
+  postProjectWithParams: async (params: Omit<Transaction, 'id' | 'date'>) => {
+    return (await $axios.post(path.postProjectWithParams, params)).data
   }
 }
