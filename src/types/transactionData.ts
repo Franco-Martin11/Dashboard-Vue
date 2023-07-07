@@ -1,11 +1,11 @@
 export interface TransactionsData {
- transaction: Transaction[];
+  transaction: Transaction[]
 }
 
 export interface Transaction {
- amount:      number;
- category:    string;
- date:        Date;
- description: string;
- id:          string;
+  amount: number
+  category: string
+  date: Date
+  description: string
+  id: string
 }
