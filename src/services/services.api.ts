@@ -1,6 +1,5 @@
 import type { Transaction, TransactionsData } from '@/types/transactionData'
 import $axios from './axios.api'
-import paramsSerializer from '@/utils/paramsSerializer'
 
 const path = {
   getProject: '/project',

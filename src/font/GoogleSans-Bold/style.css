@@ -1,9 +1,8 @@
 @font-face {
-    font-family: 'Google Sans Bold';
-    src: local('Google Sans Bold'), local('Google-Sans-Bold'),
-        url('GoogleSans-Bold.woff2') format('woff2'),
-        url('GoogleSans-Bold.woff') format('woff'),
-        url('GoogleSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: 'Google Sans Bold';
+  src: local('Google Sans Bold'), local('Google-Sans-Bold'),
+    url('GoogleSans-Bold.woff2') format('woff2'), url('GoogleSans-Bold.woff') format('woff'),
+    url('GoogleSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
