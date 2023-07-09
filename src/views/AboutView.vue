@@ -1,15 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <!-- <svgBlob></svgBlob>
+    <Compdata></Compdata> -->
+<SvgIconDinamic name="search"></SvgIconDinamic>
+<SvgIconDinamic name="bars"></SvgIconDinamic>
+<SvgIconDinamic name="inbox"></SvgIconDinamic>
+<SvgIconDinamic name="notification"></SvgIconDinamic>
+<SvgIconDinamic name="share"></SvgIconDinamic>
+<SvgIconDinamic name="vector-kebab"></SvgIconDinamic>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<script setup lang="ts">
+import SvgIconDinamic from '@/components/SvgIconDinamic.vue';
+
+
+</script>
+
+<style scoped></style>
