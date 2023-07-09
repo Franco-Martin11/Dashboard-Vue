@@ -1,5 +1,6 @@
 <template>
   <div class="example bg-slate-200 text-black">
+    <h1>{{ $route.params.id }}</h1>
     <p>
       <label><b>Select Theme Palette</b> </label> &nbsp;
       <select @change="updateTheme">

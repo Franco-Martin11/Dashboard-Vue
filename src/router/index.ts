@@ -18,7 +18,7 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/balance',
+      path: '/balance/:id',
       name: 'balance',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
