@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+/// <reference types="vite-svg-loader" />
 import LogoTitle from '@/assets/icons/logoTitle.svg?component'
 import { OptionLinkRouteArr } from '@/constants/LinkRouteData'
 import OptionLink from './components/Option-Link.vue'

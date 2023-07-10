@@ -9,6 +9,7 @@
 </template>
 
 <script setup lang="ts">
+/// <reference types="vite-svg-loader" />
 import Sidebar_container from '@/components/Sidebar/Sidebar_container.vue'
 import Oval from '@/assets/icons/oval.svg?component'
 </script>

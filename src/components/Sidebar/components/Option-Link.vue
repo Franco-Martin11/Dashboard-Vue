@@ -30,6 +30,7 @@
 </template>
 
 <script setup lang="ts">
+/// <reference types="vite-svg-loader" />
 import MaskGroup from '@/assets/icons/mask-group.svg?component'
 import SvgIconDinamic from '@/components/SvgIconDinamic.vue'
 import type { OptionLinkRoute } from '@/types'
