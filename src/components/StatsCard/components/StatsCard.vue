@@ -1,7 +1,7 @@
 <template>
   <div
     v-motion-fade
-    class="w-[240px] h-[147px] rounded-[9.41px] bg-[#fff] p-3 shadow-md flex flex-col justify-between hover:shadow-lg cursor-pointer"
+    class="w-[240px] h-[147px] rounded-[9.41px] bg-[#fff] p-3 shadow-md flex flex-col justify-between hover:shadow-xl cursor-pointer"
   >
     <div class="flex flex-row gap-4">
       <img

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="w-[68px] h-[78px] relative rounded-full flex items-center pt-[5px]"
-  >
+  <div class="w-[68px] h-[78px] relative rounded-full flex items-center pt-[5px]">
     <span
       class="absolute w-3 h-3 z-20 rounded-full bg-[#fd7a00] border-2 border-[#fff] top-[12px] left-[3px]"
     ></span>

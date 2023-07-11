@@ -36,7 +36,6 @@
 
 <script setup lang="ts">
 import { useUserComposable } from '@/composables/useUserComposable'
-
 const { postElementData, data: dataArray } = useUserComposable()
 
 const handleDataInformation = () => alert(JSON.stringify(dataArray.value))

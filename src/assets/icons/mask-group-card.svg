@@ -1,0 +1,11 @@
+<svg width="222" height="108" viewBox="0 0 222 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="MaskGroupCard">
+<mask id="mask0_34_9" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="222" height="108">
+<rect id="Rectangle 4288" width="222" height="107.092" rx="10.9437" fill="#EA5A47"/>
+</mask>
+<g mask="url(#mask0_34_9)">
+<path id="Oval" d="M185.673 -89.6526C235.781 -74.409 264.043 -21.4315 248.8 28.676C233.556 78.7835 184.199 132.35 147.339 47.5588C110.478 -37.2323 52.101 23.5816 67.3445 -26.5259C82.5881 -76.6334 135.566 -104.896 185.673 -89.6526Z" fill="white" fill-opacity="0.1"/>
+<path id="Oval_2" opacity="0.3" d="M-13.6563 60.4318C36.4512 75.6753 64.714 128.653 49.4704 178.76C34.2269 228.868 -15.1302 282.434 -51.991 197.643C-88.8518 112.852 -147.229 173.666 -131.985 123.558C-116.741 73.4509 -63.7638 45.1882 -13.6563 60.4318Z" fill="white"/>
+</g>
+</g>
+</svg>

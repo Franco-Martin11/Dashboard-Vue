@@ -9,14 +9,17 @@ module.exports = {
       lg: '976px',
       xl: '1440px'
     },
+    backgroundImage: {
+      'card-pattern': "url('src/assets/icons/mask-group-card.svg')"
+    },
     colors: {
-      'Pallet-Purple':'#51459E',
+      'Pallet-Purple': '#51459E',
       'Pallet-Cyan': '#84E8F4',
       'Pallet-Orange': '#ff49db',
       'Pallet-Red': '#ff49db',
       'Heading-Purple': '#505887',
       'Subtitle-Gray': '#9698AB',
-      'Head-UserGray': '#5B5B5B',
+      'Head-UserGray': '#5B5B5B'
     },
     fontFamily: {
       'heading-bold': ['Google Sans Bold', 'sans-serif'],

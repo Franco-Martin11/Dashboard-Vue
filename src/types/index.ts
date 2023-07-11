@@ -6,7 +6,6 @@ export interface OptionLinkRoute {
   size?: number
 }
 
-
 export interface CardData {
   imgSrc: string
   percentaje: number
