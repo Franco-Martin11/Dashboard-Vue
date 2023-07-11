@@ -7,6 +7,7 @@ import { ref, onMounted } from 'vue'
 interface props {
   name: string
 }
+// eslint-disable-next-line no-redeclare
 const props = defineProps<props>()
 
 const svg = ref('')

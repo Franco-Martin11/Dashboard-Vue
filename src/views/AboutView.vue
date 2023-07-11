@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <Sidebar_container />
+  <div v-motion-fade>
+    <AvatarImage />
   </div>
 </template>
 
 <script setup lang="ts">
-import Sidebar_container from '@/components/Sidebar/Sidebar_container.vue'
+import AvatarImage from '@/components/AvatarImage.vue'
 </script>
 
 <style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row gap-2 w-full min-h-screen p-2 bg-[#fff] relative overflow-hidden">
+  <div class="flex flex-row gap-4 w-full min-h-screen p-2 bg-[#fff] relative overflow-hidden z-10">
     <Oval class="absolute top-0 right-[-20px]"></Oval>
     <Sidebar_container></Sidebar_container>
     <main class="flex-1">

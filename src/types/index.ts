@@ -5,3 +5,12 @@ export interface OptionLinkRoute {
   urlRoute: string
   size?: number
 }
+
+
+export interface CardData {
+  imgSrc: string
+  percentaje: number
+  profit: boolean
+  headTitle: string
+  resultsStats: string | number
+}
