@@ -31,7 +31,10 @@
   </div>
 
   <div class="flex flex-row justify-between gap-2 mt-2">
-    <StatsContainer />
+    <div class="flex gap-6 flex-col my-6">
+      <BarStatsContainer />
+      <StatsContainer />
+    </div>
     <CampaingEarnings />
   </div>
 </template>
@@ -44,4 +47,5 @@ import NotificationIcon from '@/assets/icons/notification.svg?component'
 import UserPersonIcon from '@/assets/icons/user-person.svg?component'
 import StatsContainer from '@/components/StatsCard/StatsContainer.vue'
 import CampaingEarnings from '@/components/StatsCard/components/CampaingEarnings.vue'
+import BarStatsContainer from '@/components/BarStats/BarStatsContainer.vue'
 </script>
