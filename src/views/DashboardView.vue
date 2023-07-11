@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row justify-between items-center z-30 relative mt-2">
-    <div v-motion-fade class="flex flex-col h-[55px]">
+    <div v-motion-fade class="flex flex-col">
       <h1 class="text-Heading-Purple font-heading-bold text-[27px]">Analytics</h1>
       <h4 class="text-[15px] font-body-regular text-Subtitle-Gray">
         Welcome back. Let's get back to work.
@@ -29,7 +29,11 @@
       </button>
     </div>
   </div>
-  <StatsContainer />
+
+  <div class="flex flex-row justify-between gap-2 mt-2">
+    <StatsContainer />
+    <CampaingEarnings />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -39,4 +43,5 @@ import MessageButtonIcon from '@/assets/icons/messageButton.svg?component'
 import NotificationIcon from '@/assets/icons/notification.svg?component'
 import UserPersonIcon from '@/assets/icons/user-person.svg?component'
 import StatsContainer from '@/components/StatsCard/StatsContainer.vue'
+import CampaingEarnings from '@/components/StatsCard/components/CampaingEarnings.vue'
 </script>

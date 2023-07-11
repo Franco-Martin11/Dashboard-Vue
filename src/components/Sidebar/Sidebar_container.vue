@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col gap-4 py-4 pr-4 pl-9">
+  <div class="flex flex-col gap-4 py-4 pr-4 pl-8">
     <RouterLink to="/">
-      <LogoTitle></LogoTitle>
+      <LogoTitle class="my-4"></LogoTitle>
     </RouterLink>
     <template v-for="{ id, nameIcon, textLabel, urlRoute, size } in OptionLinkRouteArr" :key="id">
       <OptionLink
@@ -12,7 +12,7 @@
         :url-route="urlRoute"
       ></OptionLink>
     </template>
-    <div class="flex flex-col justify-center gap-2 relative shadow-sm">
+    <div class="flex flex-col justify-center gap-2 relative shadow-sm flex-1">
       <figure class="bg-[#00ffff2e] rounded-[2.5rem]">
         <img src="/richie-image-1.png" alt="Richie the bot" />
       </figure>

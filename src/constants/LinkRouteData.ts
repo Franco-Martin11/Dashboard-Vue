@@ -29,8 +29,8 @@ export const OptionLinkRouteArr: OptionLinkRoute[] = [
   {
     id: 'def456',
     nameIcon: 'calendar',
-    textLabel: 'Calendar',
-    urlRoute: '/calendar'
+    textLabel: 'Dashboard',
+    urlRoute: '/dashboard'
   },
   {
     id: 'ghi789',
