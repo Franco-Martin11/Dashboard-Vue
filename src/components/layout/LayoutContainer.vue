@@ -1,8 +1,10 @@
 <template>
-  <div class="flex flex-row gap-4 pt-2 w-full min-h-screen bg-[#fff] relative lg:overflow-hidden z-10">
+  <div
+    class="flex flex-row gap-1 p-2 w-full min-h-screen bg-[#fff] relative lg:overflow-hidden z-10"
+  >
     <Oval class="absolute top-0 right-[-20px]"></Oval>
     <Sidebar_container></Sidebar_container>
-    <main class="flex-1">
+    <main class="flex-1 mt-1 ">
       <slot name="ContainerPages" />
     </main>
   </div>

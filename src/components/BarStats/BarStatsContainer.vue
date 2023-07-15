@@ -8,7 +8,7 @@
 
       <div class="flex flex-col gap-1 items-center justify-center">
         <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Period</h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">1 Month</p>
+        <p class="text-Pallet-Purple font-heading-bold text-[16px]">12 Month</p>
       </div>
 
       <div class="flex flex-col gap-1 items-center justify-center">
@@ -29,14 +29,14 @@
       <div
         class="flex flex-col gap-4 bg-[#fafafa] items-center justify-center rounded-[10px] w-[168px] h-[79px] shadow-lg"
       >
-        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Personal Loans</h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">$45,000</p>
+        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Subscriptions</h4>
+        <p class="text-Pallet-Purple font-heading-bold text-[16px]">$495</p>
       </div>
       <div
         class="flex flex-col gap-4 bg-[#fafafa] items-center justify-center rounded-[10px] w-[168px] h-[79px] shadow-lg"
       >
-        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Personal Loans</h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">$45,000</p>
+        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Income</h4>
+        <p class="text-Pallet-Purple font-heading-bold text-[16px]">$15,000</p>
       </div>
     </div>
     <ColumnBarChart />

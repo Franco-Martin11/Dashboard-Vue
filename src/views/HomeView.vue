@@ -32,9 +32,11 @@
       </template>
     </div>
   </div>
+  <CreateInvoice/>
 </template>
 
 <script setup lang="ts">
+import CreateInvoice from '@/components/InvoiceInformation/components/CreateInvoice.vue';
 import { useUserComposable } from '@/composables/useUserComposable'
 const { postElementData, data: dataArray } = useUserComposable()
 

@@ -12,8 +12,8 @@ export default {
     return {
       series: [
         {
-          name: 'Inflation',
-          data: [12.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
+          name: 'Sales',
+          data: [12, 10, 4.0, 10.1, 2.0, 3.6, 13.2, 22.3, 11.4, 3.8, 6.5, 10.2]
         }
       ],
       chartOptions: {
@@ -95,15 +95,15 @@ export default {
             }
           }
         },
-        title: {
-          text: 'Monthly Inflation in Argentina, 2002',
-          floating: true,
-          offsetY: 330,
-          align: 'center',
-          style: {
-            color: '#444'
-          }
-        }
+        // title: {
+        //   text: 'Monthly Inflation in Argentina, 2002',
+        //   floating: true,
+        //   offsetY: 330,
+        //   align: 'center',
+        //   style: {
+        //     color: '#444'
+        //   }
+        // }
       }
     }
   }

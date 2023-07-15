@@ -32,6 +32,10 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem'
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        formFields: 'repeat(auto-fill, minmax(375px, 1fr))'
       }
     }
   },

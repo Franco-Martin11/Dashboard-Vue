@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-4 py-4 pr-4 pl-8">
+  <div class="flex flex-col gap-4 pr-4 pl-8">
     <RouterLink to="/">
       <LogoTitle class="my-4"></LogoTitle>
     </RouterLink>
