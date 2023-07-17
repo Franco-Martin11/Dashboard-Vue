@@ -4,7 +4,7 @@
   >
     <Oval class="absolute top-0 right-[-20px]"></Oval>
     <Sidebar_container></Sidebar_container>
-    <main class="flex-1 mt-1 ">
+    <main class="flex-1 mt-1">
       <slot name="ContainerPages" />
     </main>
   </div>

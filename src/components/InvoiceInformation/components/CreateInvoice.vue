@@ -53,7 +53,7 @@ import FormFields from './FormFields.vue'
 import { initialFormValue } from '@/constants/InitialFormState'
 let formDataRef = ref(initialFormValue)
 
-const emits = defineEmits(['mi-evento', 'on-function'])
+defineEmits(['mi-evento', 'on-function'])
 
 // Obtén la instancia actual del componente
 const instance: ComponentInternalInstance | null = getCurrentInstance()

@@ -1,6 +1,6 @@
 <template>
   <div v-motion-fade>
-    <AvatarImage />
+    <AvatarImage :url="null" alt="prueba" />
   </div>
 </template>
 

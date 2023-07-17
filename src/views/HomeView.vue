@@ -2,6 +2,21 @@
   <div>
     <h1 className="font-heading-bold">Prueba sera que esto funciona</h1>
     <h2 className="font-body-regular text-Pallet-Purple">Prueba sera que esto funciona regular</h2>
+  </div>
+  <AvatarImage :url="null" :alt="'Image'" />
+  <AvatarPreview name="Award" stats="1233" />
+  <AvatarPreview name="Award" stats="1233" />
+  <AvatarPreview name="Award" stats="1233" />
+  <AvatarPreview name="Award" stats="1233" />
+</template>
+<script setup lang="ts">
+import AvatarImage from '@/components/AvatarImage.vue'
+import AvatarPreview from '@/components/User/components/AvatarPreview.vue'
+</script>
+<!-- <template>
+  <div>
+    <h1 className="font-heading-bold">Prueba sera que esto funciona</h1>
+    <h2 className="font-body-regular text-Pallet-Purple">Prueba sera que esto funciona regular</h2>
     <div>
       <button
         type="button"
@@ -50,4 +65,4 @@ const manejarEvento = (dato: string) => {
 const eventoRecibido = ref('')
 
 const handleDataInformation = () => alert(JSON.stringify(dataArray.value))
-</script>
+</script> -->

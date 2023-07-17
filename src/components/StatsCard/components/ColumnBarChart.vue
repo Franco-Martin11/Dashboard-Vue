@@ -94,7 +94,7 @@ export default {
               return val + '%'
             }
           }
-        },
+        }
         // title: {
         //   text: 'Monthly Inflation in Argentina, 2002',
         //   floating: true,
