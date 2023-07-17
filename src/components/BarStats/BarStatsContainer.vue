@@ -52,7 +52,7 @@ import ColumnBarChart from '../StatsCard/components/ColumnBarChart.vue'
   display: grid;
   grid-template-columns: repeat(2, 1fr) 170px;
   /* grid-template-rows: repeat(3, 1fr); */
-  gap: 2rem;
+  gap: 1rem;
   place-content: center;
   width: 100%;
   height: auto;

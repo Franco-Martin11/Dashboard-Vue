@@ -1,6 +1,6 @@
 <template>
   <div>
-    <template v-if="nameIcon === 'calendar'">
+    <template v-if="nameIcon === 'credits'">
       <svg
         class="my-5"
         width="153"

@@ -1,17 +1,19 @@
 <template>
-  <div>
-    <h1 className="font-heading-bold">Prueba sera que esto funciona</h1>
-    <h2 className="font-body-regular text-Pallet-Purple">Prueba sera que esto funciona regular</h2>
-  </div>
-  <AvatarImage :url="null" :alt="'Image'" />
-  <AvatarPreview name="Award" stats="1233" />
-  <AvatarPreview name="Award" stats="1233" />
-  <AvatarPreview name="Award" stats="1233" />
-  <AvatarPreview name="Award" stats="1233" />
+  <LayoutNavbar>
+    <template #headingNavigation>
+      <div>
+        <h1 className="font-heading-bold">Prueba sera que esto funciona</h1>
+        <h2 className="font-body-regular text-Pallet-Purple">
+          Prueba sera que esto funciona regular
+        </h2>
+      </div></template
+    >
+  </LayoutNavbar>
+  <UserTable />
 </template>
 <script setup lang="ts">
-import AvatarImage from '@/components/AvatarImage.vue'
-import AvatarPreview from '@/components/User/components/AvatarPreview.vue'
+import UserTable from '@/components/User/UserTable.vue'
+import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
 </script>
 <!-- <template>
   <div>

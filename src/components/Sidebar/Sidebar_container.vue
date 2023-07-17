@@ -12,7 +12,7 @@
         :url-route="urlRoute"
       ></OptionLink>
     </template>
-    <div class="flex flex-col justify-center gap-2 relative shadow-sm flex-1">
+    <div class="flex flex-col justify-center gap-2 relative shadow-sm mt-4">
       <figure class="bg-[#00ffff2e] rounded-[2.5rem]">
         <img src="/richie-image-1.png" alt="Richie the bot" />
       </figure>

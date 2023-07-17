@@ -3,40 +3,40 @@ import type { CardData, OptionLinkRoute } from '@/types'
 export const OptionLinkRouteArr: OptionLinkRoute[] = [
   {
     id: '123abc',
-    nameIcon: 'home',
-    textLabel: 'Home',
-    urlRoute: '/',
+    nameIcon: 'dashboard',
+    textLabel: 'Dashboard',
+    urlRoute: '/dashboard',
     size: 24
   },
   {
     id: '456def',
-    nameIcon: 'location',
-    textLabel: 'Location',
-    urlRoute: '/location'
+    nameIcon: 'transaction',
+    textLabel: 'Transactions',
+    urlRoute: '/transactions'
   },
   {
     id: '789ghi',
-    nameIcon: 'cloud',
-    textLabel: 'cloud',
-    urlRoute: '/cloud-storage'
+    nameIcon: 'expenses',
+    textLabel: 'Expenses',
+    urlRoute: '/expenses'
   },
   {
     id: 'abc123',
-    nameIcon: 'message',
-    textLabel: 'Messages',
-    urlRoute: '/messages'
-  },
-  {
-    id: 'def456',
-    nameIcon: 'calendar',
-    textLabel: 'Dashboard',
-    urlRoute: '/dashboard'
+    nameIcon: 'invoices',
+    textLabel: 'Invoices',
+    urlRoute: '/invoices'
   },
   {
     id: 'ghi789',
-    nameIcon: 'saved',
-    textLabel: 'Saved',
-    urlRoute: '/saved'
+    nameIcon: 'credits',
+    textLabel: 'Credits',
+    urlRoute: '/credits'
+  },
+  {
+    id: 'ghi689',
+    nameIcon: 'subscription',
+    textLabel: 'Subscriptions',
+    urlRoute: '/subscriptions'
   },
   {
     id: 'xyz123',
