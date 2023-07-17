@@ -9,7 +9,7 @@
       :name="name"
       :id="id"
       :value="value"
-      @input="$emit('update:value', $event.target.value)"
+      @input="$emit('update:value', $event?.target?.value)"
     />
   </div>
 </template>

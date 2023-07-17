@@ -32,13 +32,22 @@
       </template>
     </div>
   </div>
-  <CreateInvoice/>
+  <CreateInvoice @mi-evento="manejarEvento" @on-function="(datos) => console.log(datos)" />
 </template>
 
 <script setup lang="ts">
-import CreateInvoice from '@/components/InvoiceInformation/components/CreateInvoice.vue';
+import CreateInvoice from '@/components/InvoiceInformation/components/CreateInvoice.vue'
 import { useUserComposable } from '@/composables/useUserComposable'
 const { postElementData, data: dataArray } = useUserComposable()
+import { ref } from 'vue'
+
+// Maneja el evento emitido por el componente hijo
+const manejarEvento = (dato: string) => {
+  eventoRecibido.value = dato
+  console.log(eventoRecibido.value)
+}
+// Variable reactiva para almacenar el evento recibido
+const eventoRecibido = ref('')
 
 const handleDataInformation = () => alert(JSON.stringify(dataArray.value))
 </script>

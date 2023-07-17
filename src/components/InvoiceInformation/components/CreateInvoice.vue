@@ -1,121 +1,70 @@
 <template>
-  <div class="flex flex-col gap-4 justify-start bg-[#ececec] rounded-lg shadow-md p-6">
+  <div
+    class="flex flex-col gap-4 justify-start bg-[#ececec] rounded-lg shadow-md p-6 z-50 relative"
+  >
     <div class="flex shrink-0 flex-row gap-4 justify-between text-[27px]">
       <h2 class="font-heading-bold text-Pallet-Purple capitalize">Create new invoice</h2>
-      <span> ✕ </span>
+      <button type="button" title="Prueba X" @click="emitirEvento">✕</button>
     </div>
 
     <h4 class="shrink-0 text-Head-UserGray font-body-regular text-[22px]" for="">
       Invoice Number <span class="text-Pallet-Purple">#4444444</span>
     </h4>
 
-    <form action="" :v-model="formData" class="grid-cols-formFields gap-4 grid h-full w-full">
-      <div class="flex flex-col gap-1 justify-start">
-        <label class="text-Head-UserGray font-body-regular text-[14px]" for="">Supplier</label>
-        <input
-          type="text"
-          class="py-1 px-2 pl-3 rounded-md border border-Heading-Purple bg-[#e9e9e9]"
-          name=""
-          id=""
+    <form
+      action=""
+      @submit.prevent="handleClick"
+      :v-model="formDataRef"
+      class="grid-cols-formFields gap-4 grid h-full w-full"
+    >
+      <template v-for="formData in formDataRef" :key="formData.id">
+        <FormFields
+          :input-type="formData.type"
+          :id="formData.id"
+          :value="formData.value"
+          :name="formData.name"
+          v-model="formData.value"
+          @update:value="(newValue) => (formData.value = newValue)"
         />
-      </div>
-      <FormFields
-        :input-type="formData.suplier.type"
-        :id="formData.suplier.id"
-        :value="formData.suplier.value"
-        :name="formData.suplier.name"
-        v-model="formData.suplier.value"
-        @update:value="(newValue) => (formData.suplier.value = newValue)"
-      />
-      <div class="flex flex-col gap-1 justify-start">
-        <label class="text-Head-UserGray font-body-regular text-[14px]" for="">Issuance Date</label>
-        <input
-          type="text"
-          class="py-1 px-2 pl-3 rounded-md border border-Heading-Purple bg-[#e9e9e9]"
-          name=""
-          id=""
-        />
-      </div>
-      <div class="flex flex-col gap-1 justify-start flex[1_0_140px]">
-        <label class="text-Head-UserGray font-body-regular text-[14px]" for="">Issuance Date</label>
-        <input
-          type="text"
-          class="py-1 px-2 pl-3 rounded-md border border-Heading-Purple bg-[#e9e9e9]"
-          name=""
-          id=""
-        />
-      </div>
-
-      <div class="flex flex-col gap-1 justify-start">
-        <label class="text-Head-UserGray font-body-regular text-[14px]" for="">Issuance Date</label>
-        <input
-          type="text"
-          class="py-1 px-2 pl-3 rounded-md border border-Heading-Purple bg-[#e9e9e9]"
-          name=""
-          id=""
-        />
-      </div>
-
-      <div class="flex flex-col gap-1 justify-start">
-        <label class="text-Head-UserGray font-body-regular text-[14px]" for="">Currency</label>
-        <input
-          type="text"
-          class="py-1 px-2 pl-3 rounded-md border border-Heading-Purple bg-[#e9e9e9]"
-          name=""
-          id=""
-        />
-      </div>
-      <div class="flex flex-col gap-1 justify-start">
-        <label class="text-Head-UserGray font-body-regular text-[14px]" for="">Category</label>
-        <input
-          type="text"
-          class="py-1 px-2 pl-3 rounded-md border border-Heading-Purple bg-[#e9e9e9]"
-          name=""
-          id=""
-        />
-      </div>
-      <div class="flex flex-col gap-1 justify-start">
-        <label class="text-Head-UserGray font-body-regular text-[14px]" for="">Description</label>
-        <input
-          type="text"
-          class="py-1 px-2 pl-3 rounded-md border border-Heading-Purple bg-[#e9e9e9]"
-          name=""
-          id=""
-        />
+      </template>
+      <div class="flex flex-row gap-1 justify-start">
+        <button
+          class="text-lg font-heading-bold px-2 py-1 rounded-md border border-Pallet-Purple hover:bg-[#f73030] hover:text-[#fff] hover:border-[transparent] hover:shadow-lg"
+          type="button"
+          @click="handleClick"
+        >
+          Cancel
+        </button>
+        <button
+          class="text-lg font-body-regular text-[#fff] px-2 py-1 rounded-md border-[transparent] border hover:border-Pallet-Purple bg-Pallet-Purple hover:border-[transparent] hover:bg-[#0c9e13] hover:text-[#000] hover:shadow-lg"
+          type="submit"
+          @click="emitirEvento"
+        >
+          Create Invoice
+        </button>
       </div>
     </form>
-    <div class="flex flex-row gap-1 justify-start">
-      <button
-        class="text-lg font-heading-bold px-2 py-1 rounded-md border-[transparent] border hover:bg-[#f73030] hover:text-[#fff] border-Pallet-Purple hover:border-[transparent] hover:shadow-lg"
-        type="submit"
-      >
-        Cancel
-      </button>
-      <button
-        class="text-lg font-body-regular text-[#fff] px-2 py-1 rounded-md border-[transparent] border hover:border-Pallet-Purple bg-Pallet-Purple hover:border-[transparent] hover:bg-[#0c9e13] hover:text-[#000] hover:shadow-lg"
-        type="submit"
-        @click="handleClick"
-      >
-        Create Invoice
-      </button>
-    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { getCurrentInstance, ref, type ComponentInternalInstance } from 'vue'
 import FormFields from './FormFields.vue'
+import { initialFormValue } from '@/constants/InitialFormState'
+let formDataRef = ref(initialFormValue)
 
-const formData = ref({
-  suplier: {
-    type: 'text',
-    id: '12asd',
-    value: '',
-    name: 'suplier'
-  }
-})
+const emits = defineEmits(['mi-evento', 'on-function'])
 
-const handleClick = () => console.log(formData.value)
+// Obtén la instancia actual del componente
+const instance: ComponentInternalInstance | null = getCurrentInstance()
+
+// Función para emitir el evento hacia el componente padre
+const emitirEvento = () => {
+  instance?.emit('on-function', 'Datos del evento funtion')
+  instance?.emit('mi-evento', 'Datos del evento')
+}
+
+const handleClick = () => (formDataRef.value = initialFormValue)
 </script>
 
 <style scoped></style>
