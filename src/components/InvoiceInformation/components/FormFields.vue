@@ -9,12 +9,14 @@
       :name="name"
       :id="id"
       :value="value"
-      @input="$emit('update:value', $event?.target?.value)"
+      @input="handleInput"
     />
   </div>
 </template>
 
 <script setup lang="ts">
+import { getCurrentInstance, type ComponentInternalInstance } from 'vue'
+
 interface propsData {
   inputType: string
   name: string
@@ -22,4 +24,11 @@ interface propsData {
   value: string
 }
 defineProps<propsData>()
+
+const instance: ComponentInternalInstance | null = getCurrentInstance()
+
+const handleInput = (event: Event) => {
+  const value = event?.target instanceof HTMLInputElement ? event.target.value : null
+  instance?.emit('update:value', value)
+}
 </script>

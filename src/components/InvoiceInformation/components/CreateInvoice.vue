@@ -62,6 +62,8 @@ const instance: ComponentInternalInstance | null = getCurrentInstance()
 const emitirEvento = () => {
   instance?.emit('on-function', 'Datos del evento funtion')
   instance?.emit('mi-evento', 'Datos del evento')
+
+  console.log(formDataRef.value)
 }
 
 const handleClick = () => (formDataRef.value = initialFormValue)

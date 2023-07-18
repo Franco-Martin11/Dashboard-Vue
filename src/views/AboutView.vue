@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import AvatarImage from '@/components/AvatarImage.vue'
+import AvatarImage from '@/components/User/components/AvatarImage.vue'
 </script>
 
 <style scoped></style>

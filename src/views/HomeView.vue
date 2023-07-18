@@ -9,10 +9,10 @@
       </div></template
     >
   </LayoutNavbar>
-  <UserTable />
+  <CreateInvoice />
 </template>
 <script setup lang="ts">
-import UserTable from '@/components/User/UserTable.vue'
+import CreateInvoice from '@/components/InvoiceInformation/components/CreateInvoice.vue'
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
 </script>
 <!-- <template>
