@@ -19,10 +19,17 @@
       <button type="button" class="w-[48px] h-[48px] rounded-[10px] bg-[#FEFEFF] shadow-md">
         <NotificationIcon class="m-auto"></NotificationIcon>
       </button>
-      <button type="button" class="w-[48px] h-[48px] rounded-[10px] bg-[#FEFEFF] shadow-md">
+      <button
+        type="button"
+        class="w-[48px] h-[48px] rounded-[10px] bg-[#FEFEFF] shadow-md"
+        :onclick="handleToggle"
+      >
         <UserPersonIcon class="m-auto"></UserPersonIcon>
       </button>
     </nav>
+  </div>
+  <div v-if="toggle" class="absolute top-24 right-[.35rem] w-[280px]">
+    <UserTable />
   </div>
 </template>
 
@@ -32,6 +39,11 @@ import OptionIcon from '@/assets/icons/tune.svg?component'
 import MessageButtonIcon from '@/assets/icons/messageButton.svg?component'
 import NotificationIcon from '@/assets/icons/notification.svg?component'
 import UserPersonIcon from '@/assets/icons/user-person.svg?component'
+import { ref } from 'vue'
+import UserTable from '../User/UserTable.vue'
+
+const toggle = ref<boolean>(false)
+const handleToggle = () => (toggle.value = !toggle.value)
 </script>
 
 <style scoped></style>

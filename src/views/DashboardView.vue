@@ -15,7 +15,6 @@
       <StatsContainer />
     </div>
     <div v-motion-fade class="flex flex-col items-center gap-4">
-      <UserTable />
       <CampaingEarnings />
     </div>
   </div>
@@ -25,6 +24,5 @@
 import StatsContainer from '@/components/StatsCard/StatsContainer.vue'
 import CampaingEarnings from '@/components/StatsCard/components/CampaingEarnings.vue'
 import BarStatsContainer from '@/components/BarStats/BarStatsContainer.vue'
-import UserTable from '@/components/User/UserTable.vue'
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
 </script>
