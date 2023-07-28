@@ -22,9 +22,9 @@
       <VueApexCharts type="donut" :options="chartOptions" :series="chartSeries" />
     </div>
 
-    <div class="flex gap-4 justify-between w-full">
-      <StatBlock title="Earning" :amount="`$${chartSeries[0]}`" :change="17" />
-      <StatBlock title="Expenses" :amount="`$${chartSeries[1]}`" :change="-7" />
+    <div class="flex gap-1 justify-between w-full">
+      <StatBlock title="Earning" :amount="chartSeries[0]" :change="17" />
+      <StatBlock title="Expenses" :amount="chartSeries[1]" :change="-7" />
     </div>
 
     <BarsDecoration v-motion-slide-bottom class="w-[222px] h-[38px] shrink-0 opacity-[0.40]" />
