@@ -3,11 +3,11 @@
     class="flex flex-col gap-4 justify-start bg-[#ececec] rounded-lg shadow-md p-6 z-50 relative w-fit"
   >
     <div class="flex shrink-0 flex-row gap-4 justify-between text-[27px]">
-      <h2 class="font-heading-bold text-Pallet-Purple capitalize">Create new invoice</h2>
+      <h2 class="font-heading-bold text-[#111] capitalize">Create new invoice</h2>
       <button type="button" title="Prueba X" @click="emitirEvento">✕</button>
     </div>
 
-    <h4 class="shrink-0 text-Head-UserGray font-body-regular text-[22px]" for="">
+    <h4 class="shrink-0 text-[#333] font-body-regular text-[22px]" for="">
       Invoice Number <span class="text-Pallet-Purple">#4444444</span>
     </h4>
 
