@@ -29,14 +29,14 @@
       </template>
       <div class="flex flex-row gap-2 justify-start items-end">
         <button
-          class="text-lg h-fit w-fit font-heading-bold px-2 py-1 rounded-md border-[#f7303060] bg-[#f7303060] hover:bg-[#f7303060] hover:shadow-lg"
+          class="text-lg h-fit w-fit font-heading-bold px-2 py-1 rounded-md bg-[#fafafa] border border-[#ccc]  hover:bg-[#e7e7e7] hover:shadow-lg"
           type="button"
           @click="handleClick"
         >
           Cancel
         </button>
         <button
-          class="text-lg h-fit w-fit font-heading-bold text-[#fff] px-2 py-1 rounded-md hover:border-Pallet-Purple bg-Pallet-Purple hover:bg-[#4308b1] hover:shadow-lg"
+          class="text-lg h-fit w-fit font-heading-bold text-[#fff] px-2 py-1 rounded-md  bg-Pallet-Purple border border-transparent hover:shadow-xl"
           type="submit"
           @click="emitirEvento"
         >
