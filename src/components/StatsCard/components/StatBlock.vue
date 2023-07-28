@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-1 flex-col items-center gap-[8px] justify-start text-[#fafafa]">
-    <!-- <h4>{{ title }}</h4> -->
+    <h4>{{ title }}</h4>
     <div class="font-heading-bold text-[18px] flex flex-row gap-1 items-center">
       <p>{{ amount }}</p>
       <span
