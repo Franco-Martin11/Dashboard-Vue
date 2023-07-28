@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col gap-4 justify-start bg-[#ececec] rounded-lg shadow-md p-6 z-50 relative w-fit"
+    class="flex flex-col gap-4 justify-start bg-[#fbfbfb] rounded-lg shadow-md p-6 z-50 relative w-fit"
   >
     <div class="flex shrink-0 flex-row gap-4 justify-between text-[27px]">
       <h2 class="font-heading-bold text-[#111] capitalize">Create new invoice</h2>

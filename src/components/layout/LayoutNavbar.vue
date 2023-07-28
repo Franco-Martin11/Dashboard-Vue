@@ -44,16 +44,16 @@
       </button>
     </nav>
   </div>
-  <div v-if="userTableToggle" v-motion-fade class="absolute top-24 right-[.35rem] w-[280px]">
+  <div v-if="userTableToggle" v-motion-fade class="absolute top-24 z-50 right-[.35rem] w-[280px]">
     <UserTable />
   </div>
-  <div v-if="notificationToggle" v-motion-fade class="absolute top-24 right-[5rem] w-[280px]">
+  <div v-if="notificationToggle" v-motion-fade class="absolute top-24 z-50 right-[5rem] w-[280px]">
     <UserTable />
   </div>
-  <div v-if="messageToggle" v-motion-fade class="absolute top-24 right-[10rem] w-[280px]">
+  <div v-if="messageToggle" v-motion-fade class="absolute top-24 z-50 right-[10rem] w-[280px]">
     <UserTable />
   </div>
-  <div v-if="optionToggle" v-motion-fade class="absolute top-24 right-[25rem] w-[280px]">
+  <div v-if="optionToggle" v-motion-fade class="absolute top-24 z-50 right-[25rem] w-[280px]">
     <UserTable />
   </div>
 </template>
