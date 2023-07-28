@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col gap-4 justify-start bg-[#ececec] rounded-lg shadow-md p-6 z-50 relative"
+    class="flex flex-col gap-4 justify-start bg-[#ececec] rounded-lg shadow-md p-6 z-50 relative w-96"
   >
     <div class="flex shrink-0 flex-row gap-4 justify-between text-[27px]">
       <h2 class="font-heading-bold text-Pallet-Purple capitalize">Create new invoice</h2>
@@ -29,14 +29,14 @@
       </template>
       <div class="flex flex-row gap-1 justify-start">
         <button
-          class="text-lg font-heading-bold px-2 py-1 rounded-md border border-Pallet-Purple hover:bg-[#f73030] hover:text-[#fff] hover:border-[transparent] hover:shadow-lg"
+          class="text-lg font-heading-bold px-2 py-1 rounded-md  bg-[#f7303060] hover:bg-[#f7303060] hover:border-[transparent] hover:shadow-lg"
           type="button"
           @click="handleClick"
         >
           Cancel
         </button>
         <button
-          class="text-lg font-body-regular text-[#fff] px-2 py-1 rounded-md border-[transparent] border hover:border-Pallet-Purple bg-Pallet-Purple hover:border-[transparent] hover:bg-[#0c9e13] hover:text-[#000] hover:shadow-lg"
+          class="text-lg font-body-regular text-[#fff] px-2 py-1 rounded-md border-[transparent] border hover:border-Pallet-Purple bg-Pallet-Purple hover:border-[transparent] hover:bg-[#4308b1] hover:shadow-lg"
           type="submit"
           @click="emitirEvento"
         >
