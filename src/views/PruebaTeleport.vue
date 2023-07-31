@@ -55,7 +55,7 @@
               </div>
             </div>
 
-            <img class="shrink-0 w-[26px] h-[26px] relative" src="../assets/icons/Expand-Arrow.svg" />
+            <ExpandArrow class="shrink-0 w-[26px] h-[26px] relative"/>
           </div>
 
           <div
@@ -70,7 +70,7 @@
               </div>
             </div>
 
-            <img class="shrink-0 w-[26px] h-[26px] relative" src="../assets/icons/Expand-Arrow.svg" />
+            <ExpandArrow class="shrink-0 w-[26px] h-[26px] relative" />
           </div>
 
 
@@ -142,7 +142,7 @@
                   </div>
                 </div>
 
-                <img class="shrink-0 w-8 h-8 relative" src="../assets/icons/Calendar.svg" />
+                <Calendar class="shrink-0 w-8 h-8 relative"  />
               </div>
 
               <div
@@ -157,7 +157,7 @@
                   </div>
                 </div>
 
-                <img class="shrink-0 w-8 h-8 relative" src="../assets/icons/Calendar.svg" />
+                <Calendar class="shrink-0 w-8 h-8 relative" />
               </div>
             </div>
 
@@ -173,7 +173,7 @@
                 </div>
               </div>
 
-              <img class="shrink-0 w-8 h-8 relative" src="../assets/icons/Calendar.svg" />
+              <Calendar class="shrink-0 w-8 h-8 relative"/>
             </div>
           </div>
         </div>
@@ -485,6 +485,8 @@
 
 <script setup lang="ts">
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue';
+import Calendar from '@/assets/icons/Calendar.svg?component'
+import ExpandArrow from '@/assets/icons/Expand-Arrow.svg?component'
 
 
 </script>
