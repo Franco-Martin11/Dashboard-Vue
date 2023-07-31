@@ -55,7 +55,7 @@
               </div>
             </div>
 
-            <img class="shrink-0 w-[26px] h-[26px] relative" src="Expand-Arrow.svg" />
+            <img class="shrink-0 w-[26px] h-[26px] relative" src="../assets/icons/Expand-Arrow.svg" />
           </div>
 
           <div
@@ -70,7 +70,7 @@
               </div>
             </div>
 
-            <img class="shrink-0 w-[26px] h-[26px] relative" src="Expand-Arrow.svg" />
+            <img class="shrink-0 w-[26px] h-[26px] relative" src="../assets/icons/Expand-Arrow.svg" />
           </div>
 
 
@@ -142,7 +142,7 @@
                   </div>
                 </div>
 
-                <img class="shrink-0 w-8 h-8 relative" src="Calendar.svg" />
+                <img class="shrink-0 w-8 h-8 relative" src="../assets/icons/Calendar.svg" />
               </div>
 
               <div
@@ -157,7 +157,7 @@
                   </div>
                 </div>
 
-                <img class="shrink-0 w-8 h-8 relative" src="Calendar.svg" />
+                <img class="shrink-0 w-8 h-8 relative" src="../assets/icons/Calendar.svg" />
               </div>
             </div>
 
@@ -173,7 +173,7 @@
                 </div>
               </div>
 
-              <img class="shrink-0 w-8 h-8 relative" src="Calendar.svg" />
+              <img class="shrink-0 w-8 h-8 relative" src="../assets/icons/Calendar.svg" />
             </div>
           </div>
         </div>
