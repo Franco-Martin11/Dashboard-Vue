@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row justify-between items-center z-30 relative mt-2">
+  <div class="flex flex-row justify-between w-full items-center z-30 relative mt-2">
     <slot name="headingNavigation"></slot>
     <nav
       class="flex flex-row gap-2 items-center text-Subtitle-Gray rounded-[7px] w-[313px] h-[48px] bg-[#F5F9FD]"

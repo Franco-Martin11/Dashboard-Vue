@@ -19,7 +19,10 @@ module.exports = {
       'Pallet-Red': '#ff49db',
       'Heading-Purple': '#505887',
       'Subtitle-Gray': '#9698AB',
-      'Head-UserGray': '#5B5B5B'
+      'Head-UserGray': '#5B5B5B',
+      'grey': "#9a9a9a",
+      'purple': "#5e25bc",
+      "skin-1": "#f9be7a",
     },
     fontFamily: {
       'heading-bold': ['Google Sans Bold', 'sans-serif'],
