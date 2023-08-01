@@ -8,7 +8,8 @@
     New +
   </button>
   <template v-if="createInvoceToggle">
-    <div v-motion-fade
+    <div
+      v-motion-fade
       class="flex flex-col gap-4 justify-start bg-[#fbfbfb] rounded-lg shadow-md p-6 z-50 relative w-fit"
     >
       <div class="flex shrink-0 flex-row gap-4 justify-between text-[27px]">

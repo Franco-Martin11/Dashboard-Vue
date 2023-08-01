@@ -1,8 +1,6 @@
 <template>
   <div class="flex flex-col gap-1 justify-start">
-    <label class="text-[#111] font-heading-bold text-base capitalize" :for="name">{{
-      name
-    }}</label>
+    <label class="text-[#111] font-heading-bold text-base capitalize" :for="name">{{ name }}</label>
     <input
       :type="inputType"
       class="py-3 px-6 pl-3 rounded-md border border-Subtitle-Gray text-base bg-[#e9e9e9]"

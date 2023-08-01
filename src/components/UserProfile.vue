@@ -1,13 +1,10 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div
     class="bg-[#f3f3f3] rounded-[10px] p-[25px] flex flex-col gap-[30px] items-center justify-center shrink-0 relative"
   >
-    <div
-      class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative"
-    >
+    <div class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative">
       <div class="shrink-0 w-[74.21px] h-[86.6px] static">
         <svg
           class="absolute left-[48.47px] top-[86.6px] overflow-visible"
@@ -50,11 +47,7 @@
                 type="matrix"
                 values="0 0 0 0 0.121569 0 0 0 0 0.6 0 0 0 0 0.733333 0 0 0 0.31 0"
               />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow_93_302"
-              />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_93_302" />
               <feBlend
                 mode="normal"
                 in="SourceGraphic"
@@ -101,12 +94,8 @@
       </div>
     </div>
 
-    <div
-      class="flex flex-row gap-10 items-start justify-start shrink-0 relative"
-    >
-      <div
-        class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative"
-      >
+    <div class="flex flex-row gap-10 items-start justify-start shrink-0 relative">
+      <div class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative">
         <div
           class="text-[#505887] text-center relative"
           style="font: 700 16px 'Product Sans', sans-serif"
@@ -122,9 +111,7 @@
         </div>
       </div>
 
-      <div
-        class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative"
-      >
+      <div class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative">
         <div
           class="text-[#505887] text-center relative"
           style="font: 700 16px 'Product Sans', sans-serif"
@@ -140,9 +127,7 @@
         </div>
       </div>
 
-      <div
-        class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative"
-      >
+      <div class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative">
         <div
           class="text-[#505887] text-center relative"
           style="font: 700 16px 'Product Sans', sans-serif"
