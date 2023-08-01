@@ -84,7 +84,7 @@
               </div>
             </div>
 
-            <ExpandArrow class="shrink-0 w-[26px] h-[26px] relative" />
+            <!-- <ExpandArrow class="shrink-0 w-[26px] h-[26px] relative" /> -->
           </div>
 
           <div
@@ -106,7 +106,7 @@
               </div>
             </div>
 
-            <ExpandArrow class="shrink-0 w-[26px] h-[26px] relative" />
+            <!-- <ExpandArrow class="shrink-0 w-[26px] h-[26px] relative" /> -->
           </div>
         </div>
 
@@ -726,7 +726,7 @@
 
 <script setup lang="ts">
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
-import ExpandArrow from '@/assets/icons/expand-arrow.svg?skipsvgo'
+// import ExpandArrow from '@/assets/icons/expand-arrow.svg?skipsvgo'
 </script>
 
 <style scoped></style>
