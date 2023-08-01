@@ -485,8 +485,8 @@
 
 <script setup lang="ts">
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue';
-import Calendar from '@/assets/icons/Calendar.svg?component'
-import ExpandArrow from '@/assets/icons/Expand-Arrow.svg?component'
+import Calendar from '@/assets/icons/calendar.svg?component'
+import ExpandArrow from '@/assets/icons/expand-arrow.svg?component'
 
 
 </script>
