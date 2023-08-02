@@ -1,18 +1,23 @@
 <template>
-  <LayoutNavbar>
-    <template #headingNavigation>
-      <div>
-        <h1 className="font-heading-bold">Prueba sera que esto funciona</h1>
-        <h2 className="font-body-regular text-Pallet-Purple">
-          Prueba sera que esto funciona regular
-        </h2>
-      </div></template
-    >
-  </LayoutNavbar>
-  <CreateInvoice />
+  <LayoutContainer>
+    <template #ContainerPages>
+      <LayoutNavbar>
+        <template #headingNavigation>
+          <div>
+            <h1 className="font-heading-bold">Prueba sera que esto funciona</h1>
+            <h2 className="font-body-regular text-Pallet-Purple">
+              Prueba sera que esto funciona regular
+            </h2>
+          </div>
+        </template>
+      </LayoutNavbar>
+      <CreateInvoice />
+    </template>
+  </LayoutContainer>
 </template>
 <script setup lang="ts">
 import CreateInvoice from '@/components/InvoiceInformation/components/CreateInvoice.vue'
+import LayoutContainer from '@/components/layout/LayoutContainer.vue';
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
 </script>
 <!-- <template>

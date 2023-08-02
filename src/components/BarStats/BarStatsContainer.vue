@@ -1,43 +1,16 @@
 <template>
   <div class="container">
-    <div class="heading-chart flex flex-row justify-start gap-[90px]">
-      <div class="flex flex-col gap-1 items-center justify-center">
-        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Total Earnings</h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">500k</p>
-      </div>
+    <div class="heading-chart flex flex-row justify-start gap-1 md:gap-[90px]">
+      <template v-for="{ valueText, key, labelTitle } in descriptionCardData" :key="key">
+        <DescriptionCard :label-title="labelTitle" :value-text="valueText" />
+      </template>
 
-      <div class="flex flex-col gap-1 items-center justify-center">
-        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Period</h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">12 Month</p>
-      </div>
-
-      <div class="flex flex-col gap-1 items-center justify-center">
-        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">
-          Upcoming Projects
-        </h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">245</p>
-      </div>
     </div>
 
-    <div class="slices-data gap-[15px] flex flex-col justify-evenly">
-      <div
-        class="flex flex-col gap-4 bg-[#fafafa] items-center justify-center rounded-[10px] w-[168px] h-[79px] shadow-lg"
-      >
-        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Personal Loans</h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">$45,000</p>
-      </div>
-      <div
-        class="flex flex-col gap-4 bg-[#fafafa] items-center justify-center rounded-[10px] w-[168px] h-[79px] shadow-lg"
-      >
-        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Subscriptions</h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">$495</p>
-      </div>
-      <div
-        class="flex flex-col gap-4 bg-[#fafafa] items-center justify-center rounded-[10px] w-[168px] h-[79px] shadow-lg"
-      >
-        <h4 class="font-body-regular text-Head-UserGray capitalize text-[12px]">Income</h4>
-        <p class="text-Pallet-Purple font-heading-bold text-[16px]">$15,000</p>
-      </div>
+    <div class="slices-data gap-[15px] flex w-full flex-1 flex-wrap flex-row md:flex-col justify-evenly">
+      <template v-for="{ valueText, key, labelTitle } in slicesCardData" :key="key">
+        <SlicesCard :label-title="labelTitle" :value-text="valueText" />
+      </template>
     </div>
     <ColumnBarChart />
   </div>
@@ -45,6 +18,52 @@
 
 <script setup lang="ts">
 import ColumnBarChart from '../StatsCard/components/ColumnBarChart.vue'
+import DescriptionCard from './components/DescriptionCard.vue';
+import SlicesCard from './components/SlicesCard.vue';
+interface descriptionDataInterface {
+  labelTitle: string
+  valueText: string
+  key: string
+}
+const descriptionCardData: descriptionDataInterface[] = [{
+  labelTitle: 'Total Earnings',
+  valueText: '500k',
+  key: '123asd'
+},
+{
+  labelTitle: 'Period',
+  valueText: '12 Month',
+  key: '123asdf'
+}, {
+  labelTitle: 'Upcoming Projects',
+  valueText: '245',
+  key: '123asdfg'
+}
+]
+const slicesCardData: descriptionDataInterface[] = [{
+  labelTitle: 'Personal Loans',
+  valueText: '$45,000',
+  key: '123asd1'
+},
+{
+  labelTitle: 'Subscriptions',
+  valueText: '$495',
+  key: '123asdf2'
+}, {
+  labelTitle: 'Income',
+  valueText: '$15,000',
+  key: '123asdfg3'
+}
+, {
+  labelTitle: 'Total Balance',
+  valueText: '$150,000',
+  key: '123asdfg3'
+}
+]
+
+
+
+
 </script>
 
 <style scoped>
@@ -57,13 +76,25 @@ import ColumnBarChart from '../StatsCard/components/ColumnBarChart.vue'
   width: 100%;
   height: auto;
   grid-template-areas:
-    'heading-chart heading-chart .'
+    'heading-chart heading-chart slices-data'
     'columbar-chart columbar-chart slices-data'
     'columbar-chart columbar-chart slices-data';
 }
+
+@media screen and (max-width: 780px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'heading-chart heading-chart '
+      'columbar-chart columbar-chart '
+      'slices-data slices-data';
+  }
+}
+
 .slices-data {
   grid-area: slices-data;
 }
+
 .heading-chart {
   grid-area: heading-chart;
 }
