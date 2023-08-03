@@ -2,7 +2,7 @@
   <div class="flex flex-row gap-1 p-2 w-full bg-[#fff] relative overflow-x-hidden z-10">
     <Oval class="absolute top-0 right-[-20px]"></Oval>
     <Sidebar_container></Sidebar_container>
-    <main class="flex-1 mt-1 w-full h-full overflow-hidden">
+    <main v-motion-fade class="flex-1 mt-1 w-full h-full overflow-hidden">
       <slot name="ContainerPages" />
     </main>
   </div>

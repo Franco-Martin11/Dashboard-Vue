@@ -1,15 +1,7 @@
-interface initialState {
-  category: string
-  data: {
-    type: string
-    id: string
-    value: string
-    placeholder: string
-    name: string
-  }[]
-}
+import type { userDetailType } from "@/types";
 
-export const initialFormValue: initialState[] = [
+
+export const initialFormValue: userDetailType[] = [
   {
     category: 'My Details',
     data: [

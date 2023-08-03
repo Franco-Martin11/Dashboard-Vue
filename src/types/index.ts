@@ -13,3 +13,14 @@ export interface CardData {
   headTitle: string
   resultsStats: string | number
 }
+
+export interface userDetailType {
+  category: string
+  data: {
+    type: string
+    id: string
+    value: string
+    placeholder: string
+    name: string
+  }[]
+}

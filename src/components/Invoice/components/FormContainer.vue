@@ -114,7 +114,7 @@
 <script setup lang="ts">
 import { getCurrentInstance, ref, type ComponentInternalInstance } from 'vue'
 import { initialFormValue } from '@/constants/InitialFormState'
-import FormFields from './FormFields.vue';
+import FormFields from '@/components/InvoiceInformation/components/FormFields.vue';
 let formDataRef = ref(initialFormValue)
 
 defineEmits(['mi-evento', 'on-function'])

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <button
     type="button"
     class="text-base h-fit w-fit font-heading-bold text-[#fff] px-4 py-1 rounded-md bg-Pallet-Purple border border-transparent hover:shadow-xl"
@@ -81,4 +81,4 @@ const createInvoceToggle = ref<boolean>(false)
 const handleToggle = () => (createInvoceToggle.value = !createInvoceToggle.value)
 </script>
 
-<style scoped></style>
+<style scoped></style> -->
