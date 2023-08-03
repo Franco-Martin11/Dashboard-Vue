@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import LogoTitle from '@/assets/icons/logoTitle.svg?component'
 
 defineProps({})
 </script>
@@ -9,33 +10,11 @@ defineProps({})
     class="bg-cool-gray-050 w-full min-h-screen relative overflow-hidden flex flex-col gap-3 justify-between"
   >
     <div
-      class="pt-[15px] pr-[30px] pb-[15px] pl-[30px] flex flex-row items-center justify-between w-full"
+      class="py-2 px-10 flex flex-row items-center justify-between w-full"
     >
-      <div class="flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
-        <svg
-          class="shrink-0 relative overflow-visible"
-          style=""
-          width="38"
-          height="38"
-          viewBox="0 0 38 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect y="0.000259399" width="37.9995" height="37.9995" rx="5" fill="#51459E" />
-          <path
-            d="M26.7729 26.7726H33.0001C35.7615 26.7726 38.0001 29.0111 38.0001 31.7726V37.9997H31.773C29.0115 37.9997 26.7729 35.7611 26.7729 32.9997V26.7726Z"
-            fill="white"
-          />
-          <circle cx="18.9992" cy="19.0001" r="7.77262" fill="white" />
-        </svg>
-
-        <div
-          class="text-pallet-1-primary text-left relative"
-          style="font: 700 32px/100% 'Product Sans', sans-serif"
-        >
-          InsightDash
-        </div>
-      </div>
+    <RouterLink to="/">
+      <LogoTitle class="my-4"></LogoTitle>
+    </RouterLink>
 
       <div
         class="shrink-0 w-[38px] h-[38px] relative"
@@ -82,6 +61,7 @@ defineProps({})
         </div>
       </div>
     </div>
+
     <div class="flex flex-col gap-6 lg:gap-0 items-center justify-center w-full h-fit">
       <div
         class="flex flex-row gap-[45px] items-center justify-center self-stretch shrink-0 w-full max-h-[300px] relative"
