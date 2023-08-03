@@ -17,7 +17,7 @@
 </template>
 <script setup lang="ts">
 import CreateInvoice from '@/components/InvoiceInformation/components/CreateInvoice.vue'
-import LayoutContainer from '@/components/layout/LayoutContainer.vue';
+import LayoutContainer from '@/components/layout/LayoutContainer.vue'
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
 </script>
 <!-- <template>

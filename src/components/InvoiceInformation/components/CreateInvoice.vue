@@ -20,7 +20,6 @@
       <h4 class="shrink-0 text-[#333] font-body-regular text-[22px]" for="">
         Invoice Number <span class="text-Pallet-Purple">#4444444</span>
       </h4>
-
       <form
         action=""
         @submit.prevent="handleClick"

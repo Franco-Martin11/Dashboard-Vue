@@ -29,5 +29,5 @@ import StatsContainer from '@/components/StatsCard/StatsContainer.vue'
 import CampaingEarnings from '@/components/StatsCard/components/CampaingEarnings.vue'
 import BarStatsContainer from '@/components/BarStats/BarStatsContainer.vue'
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
-import LayoutContainer from '@/components/layout/LayoutContainer.vue';
+import LayoutContainer from '@/components/layout/LayoutContainer.vue'
 </script>

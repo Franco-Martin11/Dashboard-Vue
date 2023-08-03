@@ -3,10 +3,7 @@ import { onMounted } from 'vue'
 // import { useUserComposable } from './composables/useUserComposable'
 // const { setUserData } = useUserComposable()
 
-onMounted(() => {
-
-})
-
+onMounted(() => {})
 </script>
 <template>
   <RouterView />
