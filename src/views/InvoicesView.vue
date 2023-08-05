@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import CreateInvoice from '@/components/Invoice/CreateInvoice.vue';
+import CreateInvoice from '@/components/Invoice/CreateInvoice.vue'
 import LayoutContainer from '@/components/layout/LayoutContainer.vue'
 </script>
 

@@ -9,12 +9,10 @@ defineProps({})
   <div
     class="bg-cool-gray-050 w-full min-h-screen relative overflow-hidden flex flex-col gap-3 justify-between"
   >
-    <div
-      class="py-2 px-10 flex flex-row items-center justify-between w-full"
-    >
-    <RouterLink to="/">
-      <LogoTitle class="my-4"></LogoTitle>
-    </RouterLink>
+    <div class="py-2 px-10 flex flex-row items-center justify-between w-full">
+      <RouterLink to="/">
+        <LogoTitle class="my-4"></LogoTitle>
+      </RouterLink>
 
       <div
         class="shrink-0 w-[38px] h-[38px] relative"

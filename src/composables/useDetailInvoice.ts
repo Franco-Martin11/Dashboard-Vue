@@ -1,10 +1,11 @@
 import { userDetails } from '@/stores/userDetails'
+import type { userDetailType } from '@/types'
 import { storeToRefs } from 'pinia'
 export const userDetailsInvoices = () => {
   const state = userDetails()
-  const { data } = storeToRefs(state)
+  const { data, userData } = storeToRefs(state)
 
-  const setDataInvoice = () => state.setFormValues()
+  const setDataInvoice = (newValue: userDetailType[]) => state.setFormValues(newValue)
 
-  return { data, setDataInvoice }
+  return { data, setDataInvoice, userData }
 }
