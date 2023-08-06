@@ -1,5 +1,6 @@
 import { initialFormValue } from '@/constants/InitialFormState'
 import type { userDetailType } from '@/types'
+import { exampleInvoiceEmpty, type Invoice } from '@/types/InvoiceType'
 import { defineStore } from 'pinia'
 interface initialUserData {
   phoneNumber: string
@@ -18,9 +19,10 @@ const initialUserData = {
 }
 
 export const userDetails = defineStore('userDetails', {
-  state: (): { data: userDetailType[]; userData: initialUserData } => ({
+  state: (): { data: userDetailType[]; userData: initialUserData; useDataEmpty: Invoice } => ({
     data: initialFormValue,
-    userData: initialUserData
+    userData: initialUserData,
+    useDataEmpty: exampleInvoiceEmpty
   }),
   actions: {
     setFormValues(newValue: userDetailType[]) {

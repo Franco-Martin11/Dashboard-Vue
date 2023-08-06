@@ -10,9 +10,8 @@ export interface Invoice {
     subtotal: number | null
     taxes?: InvoiceTax[]
     discounts?: InvoiceDiscount[]
-    total: number
+    total: number | null
   }
-
   additionalInfo?: string
 }
 
@@ -103,4 +102,32 @@ export const exampleInvoice: Invoice = {
     total: 1080
   },
   additionalInfo: 'Thank you for your business!'
+}
+
+export const exampleInvoiceEmpty: Invoice = {
+  invoiceNumber: '',
+  issueDate: new Date(),
+  dueDate: new Date(),
+  paymentTerms: '',
+  provider: {
+    name: '',
+    address: '',
+    taxID: '',
+    product: '',
+    phoneNumber: '',
+    personalEmail: ''
+  },
+  client: {
+    name: '',
+    address: '',
+    taxID: '',
+    personalEmail: ''
+  },
+  product: {
+    items: [],
+    subtotal: null,
+    taxes: [],
+    total: null
+  },
+  additionalInfo: ''
 }

@@ -2,115 +2,74 @@ import type { userDetailType } from '@/types'
 
 export const initialFormValue: userDetailType[] = [
   {
-    category: 'My Details',
+    category: 'Client',
     data: [
       {
         type: 'text',
-        id: '7890QRST',
+        id: 'name',
         value: '',
         placeholder: 'Franc Martin.inc',
         name: 'Company name'
       },
       {
         type: 'text',
-        id: '7890QRST2',
+        id: 'address',
         value: '',
         placeholder: 'Berutti 2262 Buenos Aires, Argentina ST.199/B',
-        name: 'Adress'
+        name: 'Address'
+      },
+      {
+        type: 'text',
+        id: 'taxID',
+        value: '',
+        placeholder: '22-112-112-456-C',
+        name: 'Tax Id'
       },
       {
         type: 'email',
-        id: '7890QRST23',
+        id: 'personalEmail',
         value: '',
         placeholder: 'main.francomartin@gmail.com',
-        name: 'Email address'
+        name: 'Email'
       }
     ]
   },
   {
-    category: 'My Details',
+    category: 'Due Date',
+    data: [
+      {
+        type: 'date',
+        id: '7890QRST',
+        value: '',
+        placeholder: '',
+        name: 'Company name'
+      }
+    ]
+  },
+  {
+    category: 'Product',
     data: [
       {
         type: 'text',
-        id: '7890QRST',
+        id: '7890Q12',
         value: '',
-        placeholder: 'Franc Martin.inc',
-        name: 'Company name'
+        placeholder: 'Product A',
+        name: 'Description'
       },
       {
-        type: 'text',
-        id: '7890QRST2',
+        type: 'number',
+        id: '7890Q12',
         value: '',
-        placeholder: 'Berutti 2262 Buenos Aires, Argentina ST.199/B',
-        name: 'Adress'
+        placeholder: '12 hrs',
+        name: 'Time Of Hiring'
+      },
+      {
+        type: 'currency',
+        id: '7890Q12',
+        value: 'usd',
+        placeholder: '',
+        name: 'Currency'
       }
     ]
   }
-  // },
-  // {
-  //   category: '',
-  //   data: [
-  //     {
-  //       type: 'date',
-  //       id: '5678EFGH',
-  //       value: '',
-  //       name: 'Issuance Date'
-  //     }
-  //   ]
-  // },
-  // {
-  //   category: '',
-  //   data: [
-  //     {
-  //       type: 'date',
-  //       id: '1234ABCD',
-  //       value: '',
-  //       name: 'Due Date'
-  //     }
-  //   ]
-  // },
-  // {
-  //   category: '',
-  //   data: [
-  //     {
-  //       type: 'number',
-  //       id: '9012IJKL',
-  //       value: '',
-  //       name: 'Amount'
-  //     }
-  //   ]
-  // },
-  // {
-  //   category: '',
-  //   data: [
-  //     {
-  //       type: 'text',
-  //       id: '7890QRST',
-  //       value: '',
-  //       name: 'Currency'
-  //     }
-  //   ]
-  // },
-  // {
-  //   category: '',
-  //   data: [
-  //     {
-  //       type: 'text',
-  //       id: '9012IJKL',
-  //       value: '',
-  //       name: 'Category'
-  //     }
-  //   ]
-  // },
-  // {
-  //   category: '',
-  //   data: [
-  //     {
-  //       type: 'text',
-  //       id: '2345BCDE',
-  //       value: '',
-  //       name: 'Description'
-  //     }
-  //   ]
-  // }
 ]
