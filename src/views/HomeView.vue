@@ -1,7 +1,7 @@
 <template>
   <LayoutContainer>
     <template #ContainerPages>
-      <LayoutNavbar>
+      <!-- <LayoutNavbar>
         <template #headingNavigation>
           <div>
             <h1 className="font-heading-bold">Prueba sera que esto funciona</h1>
@@ -10,15 +10,14 @@
             </h2>
           </div>
         </template>
-      </LayoutNavbar>
-      <CreateInvoice />
+      </LayoutNavbar> -->
+      <!-- <CreateInvoice /> -->
+      <h1>prueba</h1>
     </template>
   </LayoutContainer>
 </template>
 <script setup lang="ts">
-import CreateInvoice from '@/components/InvoiceInformation/components/CreateInvoice.vue'
 import LayoutContainer from '@/components/layout/LayoutContainer.vue'
-import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
 </script>
 <!-- <template>
   <div>

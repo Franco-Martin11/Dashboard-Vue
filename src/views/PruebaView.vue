@@ -20,7 +20,4 @@
 
 <script lang="ts" setup>
 import CardPrueba from '@/components/CardPrueba.vue'
-import ButtonMonths from '@/components/Invoice/components/ButtonMonths.vue'
-import DatesInput from '@/components/Invoice/components/DatesInput.vue'
-import DocumentField from '@/components/Invoice/components/DocumentField.vue'
 </script>
