@@ -7,10 +7,10 @@ export interface Invoice {
   client: InvoiceParty
   product: {
     items: InvoiceItem[]
-    subtotal: number 
+    subtotal: number
     taxes?: InvoiceTax[]
     discounts?: InvoiceDiscount[]
-    total: number 
+    total: number
   }
   additionalInfo?: string
 }
