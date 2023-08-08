@@ -7,10 +7,10 @@ export interface Invoice {
   client: InvoiceParty
   product: {
     items: InvoiceItem[]
-    subtotal: number | null
+    subtotal: number 
     taxes?: InvoiceTax[]
     discounts?: InvoiceDiscount[]
-    total: number | null
+    total: number 
   }
   additionalInfo?: string
 }
@@ -81,7 +81,7 @@ export const exampleInvoice: Invoice = {
         subtotal: 50
       }
     ],
-    subtotal: null,
+    subtotal: 0,
     taxes: [
       {
         name: 'Sales Tax',
@@ -105,17 +105,17 @@ export const exampleInvoice: Invoice = {
 }
 
 export const exampleInvoiceEmpty: Invoice = {
-  invoiceNumber: '',
+  invoiceNumber: 'INV-001',
   issueDate: new Date(),
   dueDate: new Date(),
   paymentTerms: '',
   provider: {
-    name: '',
-    address: '',
-    taxID: '',
-    product: '',
-    phoneNumber: '',
-    personalEmail: ''
+    name: 'Franco Martin',
+    address: '123 Main St, Anytown, USA',
+    taxID: '123456789', // EIN in the US, CUIT in Argentina, etc.
+    product: 'Product Desing',
+    phoneNumber: '+1 646 980 4741',
+    personalEmail: 'main.francomartin.gmail.com'
   },
   client: {
     name: '',
@@ -125,9 +125,25 @@ export const exampleInvoiceEmpty: Invoice = {
   },
   product: {
     items: [],
-    subtotal: null,
-    taxes: [],
-    total: null
+    subtotal: 10,
+    taxes: [
+      {
+        name: 'Sales Tax',
+        rate: 9,
+        acronym: 'COST/IVA/ST @ 9%'
+      },
+      {
+        name: 'Use Tax',
+        rate: 5,
+        acronym: 'UT @ 5%'
+      },
+      {
+        name: 'Transaction Tax',
+        rate: 3.9,
+        acronym: 'IC/SD(Stamp-Duty)/VAT @ 3.9%'
+      }
+    ],
+    total: 0
   },
   additionalInfo: ''
 }

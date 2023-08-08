@@ -8,42 +8,42 @@ export const OptionLinkRouteArr: OptionLinkRoute[] = [
     urlRoute: '/dashboard',
     size: 24
   },
-  {
-    id: '456def',
-    nameIcon: 'transaction',
-    textLabel: 'Transactions',
-    urlRoute: '/transactions'
-  },
-  {
-    id: '789ghi',
-    nameIcon: 'expenses',
-    textLabel: 'Expenses',
-    urlRoute: '/expenses'
-  },
+  // {
+  //   id: '456def',
+  //   nameIcon: 'transaction',
+  //   textLabel: 'Transactions',
+  //   urlRoute: '/transactions'
+  // },
+  // {
+  //   id: '789ghi',
+  //   nameIcon: 'expenses',
+  //   textLabel: 'Expenses',
+  //   urlRoute: '/expenses'
+  // },
   {
     id: 'abc123',
     nameIcon: 'invoices',
     textLabel: 'Invoices',
     urlRoute: '/invoices'
-  },
-  {
-    id: 'ghi789',
-    nameIcon: 'credits',
-    textLabel: 'Credits',
-    urlRoute: '/credits'
-  },
-  {
-    id: 'ghi689',
-    nameIcon: 'subscription',
-    textLabel: 'Subscriptions',
-    urlRoute: '/subscriptions'
-  },
-  {
-    id: 'xyz123',
-    nameIcon: 'share',
-    textLabel: 'Share',
-    urlRoute: '/share'
   }
+  // {
+  //   id: 'ghi789',
+  //   nameIcon: 'credits',
+  //   textLabel: 'Credits',
+  //   urlRoute: '/credits'
+  // },
+  // {
+  //   id: 'ghi689',
+  //   nameIcon: 'subscription',
+  //   textLabel: 'Subscriptions',
+  //   urlRoute: '/subscriptions'
+  // },
+  // {
+  //   id: 'xyz123',
+  //   nameIcon: 'share',
+  //   textLabel: 'Share',
+  //   urlRoute: '/share'
+  // }
 ]
 interface ExtendedCardData extends CardData {
   id: number

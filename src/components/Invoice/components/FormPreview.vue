@@ -144,11 +144,11 @@
 
           <div class="flex flex-col gap-0 items-start justify-start shrink-0 relative">
             <div class="text-[#000000] text-left relative w-[415px]" style="font: 700 16px 'Product Sans', sans-serif">
-              Franc Martin
+              {{ provider.name }}
             </div>
 
             <div class="text-[#363636] text-left relative" style="font: 400 14px 'Product Sans', sans-serif">
-              Product Designer, Buenos Aires.
+              {{ provider.product }},{{ provider.address }}
             </div>
           </div>
         </div>
@@ -168,7 +168,6 @@
 
 <script setup lang="ts">
 import { userDetailsInvoices } from '@/composables/useDetailInvoice'
-import { exampleInvoice } from '@/types/InvoiceType'
 import { computed } from 'vue'
 import PreviewItems from './PreviewItems.vue'
 import InvoiceSubtotal from './InvoiceSubtotal.vue'
