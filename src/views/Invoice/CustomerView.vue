@@ -1,24 +1,18 @@
 <template>
   <LayoutContainer>
     <template #ContainerPages>
-      <!-- <button type="button" @click="queryValue"> -->
-      <RouterLink :to="currentRoute.path + '?q=asdasd'"> Prueba a ver si funciona </RouterLink>
-      <button type="button" @click="back">Go Back</button>
-      <!-- </button> -->
-      <template v-if="currentRoute.query.q">
-        <div class="flex flex-col gap-[25px] items-start justify-start w-full relative">
-          <LayoutNavbar
-            titleHeading="Invoice"
-            descriptionHeading="Create new invoice and download"
-          />
+      <LayoutNavbar titleHeading="Invoice" descriptionHeading="Create new invoice, upload and download" />
+      <div class="flex flex-col gap-5 w-full ">
 
-          <div
-            class="bg-[#ffffff] min-w-[350px] w-full min-h-screen h-fit border-dashed border-[#000000] border lg:border-t lg:border-b flex flex-row gap-2.5 items-start justify-start flex-wrap self-stretch shrink-0 relative"
-          >
-            <CreateInvoice />
-          </div>
+        <div class="flex flex-row gap-4">
+          <RouterLink :to="currentRoute.path + '?q=asdasd'"> Prueba a ver si funciona </RouterLink>
+          <button type="button" @click="back">Go Back</button>
         </div>
-      </template>
+
+        <template v-if="currentRoute.query.q">
+          <CreateInvoice />
+        </template>
+      </div>
     </template>
   </LayoutContainer>
 </template>
