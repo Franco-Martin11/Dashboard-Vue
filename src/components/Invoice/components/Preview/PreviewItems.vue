@@ -30,9 +30,15 @@
 </template>
 
 <script setup lang="ts">
+import { FormDetails } from '@/stores/FormDetails'
 import type { InvoiceItem } from '@/types/InvoiceType'
-
-defineProps<InvoiceItem>()
+import { onMounted } from 'vue'
+const props = defineProps<InvoiceItem>()
+const { useDataEmpty } = FormDetails()
+onMounted(() => {
+  useDataEmpty.product.subtotal += props.subtotal
+  useDataEmpty.product.total += props.subtotal
+})
 </script>
 
 <style scoped></style>

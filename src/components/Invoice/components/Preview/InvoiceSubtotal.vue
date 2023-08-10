@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row items-end justify-between self-stretch shrink-0 relative">
-    <div class="flex flex-col gap-1">
+    <div class="flex flex-col">
       <h6 class="text-[#363636] text-left font-thin text-[12px]">{{ name }}</h6>
 
       <h5
@@ -21,18 +21,31 @@
 </template>
 
 <script setup lang="ts">
-import { userDetails } from '@/stores/userDetails'
+import { FormDetails } from '@/stores/FormDetails'
 import type { InvoiceTax } from '@/types/InvoiceType'
-import { computed } from 'vue'
-const { useDataEmpty } = userDetails()
+import { onMounted, ref } from 'vue'
+
 const props = defineProps<InvoiceTax>()
-const percentaje = useDataEmpty.product.subtotal
-  ? (useDataEmpty.product.subtotal * props.rate) / 100
-  : 0
-useDataEmpty.product.total += percentaje + useDataEmpty.product.subtotal
-const dataComputed = computed(() =>
-  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(percentaje)
-)
+const { useDataEmpty } = FormDetails()
+
+onMounted(() => {
+  const calculatePercentage = (subtotal: number, rate: number) =>
+    subtotal ? (subtotal * rate) / 100 : 0
+
+  const subtotal = useDataEmpty.product.subtotal
+  const percentage = calculatePercentage(subtotal, props.rate)
+
+  useDataEmpty.product.total += percentage
+
+  const formattedPercentage = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD'
+  }).format(percentage)
+
+  dataComputed.value = formattedPercentage
+})
+
+const dataComputed = ref<string | null>(null)
 </script>
 
 <style scoped></style>

@@ -9,14 +9,14 @@
       </p>
     </div>
     <nav
-      class="flex flex-row gap-2 items-center text-Subtitle-Gray rounded-[7px] w-[313px] h-[48px] bg-[#F5F9FD]"
+      class="flex flex-row gap-2 items-center text-Subtitle-Gray rounded-[7px] w-[313px] h-[48px] bg-[#F5F9FD] cursor-not-allowed"
     >
-      <button class="m-auto" type="submit">
+      <button class="m-auto cursor-not-allowed" type="submit">
         <SearchIcon></SearchIcon>
       </button>
       <input type="text" placeholder="Search Dashboard" class="bg-[#F5F9FD] h-[inherit]" />
       <button
-        class="m-auto"
+        class="m-auto cursor-not-allowed"
         type="button"
         @click="() => (optionToggle = !optionToggle)"
         :class="optionToggle ? 'bg-[#dfdfff]' : ''"
@@ -27,7 +27,7 @@
     <button
       type="button"
       @click="() => (messageToggle = !messageToggle)"
-      class="w-[48px] h-[48px] rounded-[10px] bg-[#FEFEFF] shadow-md"
+      class="w-[48px] h-[48px] rounded-[10px] bg-[#FEFEFF] shadow-md cursor-not-allowed"
       :class="messageToggle ? 'bg-[#dfdfff]' : ''"
     >
       <MessageButtonIcon class="m-auto"></MessageButtonIcon>
@@ -36,7 +36,7 @@
       <button
         @click="() => (notificationToggle = !notificationToggle)"
         type="button"
-        class="w-[48px] h-[48px] rounded-[10px] bg-[#FEFEFF] shadow-md"
+        class="w-[48px] h-[48px] rounded-[10px] bg-[#FEFEFF] shadow-md cursor-not-allowed"
         :class="notificationToggle ? 'bg-[#dfdfff]' : ''"
       >
         <NotificationIcon class="m-auto"></NotificationIcon>

@@ -7,7 +7,7 @@
     >
       <FormContainer />
       <!-- //FacturaPreview -->
-      <FormPreview />
+      <PreviewContainer />
     </div>
     <!--  -->
   </div>
@@ -15,9 +15,8 @@
 
 <script setup lang="ts">
 import LayoutNavbar from '../layout/LayoutNavbar.vue'
-import FormContainer from './components/FormContainer.vue'
-import FormPreview from './components/FormPreview.vue'
-// import { userDetailsInvoices } from '@/composables/useDetailInvoice';
+import FormContainer from './components/Form/FormContainer.vue'
+import PreviewContainer from './components/Preview/PreviewContainer.vue'
 </script>
 
 <style scoped></style>

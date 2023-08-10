@@ -2,7 +2,7 @@ import type { userDetailType } from '@/types'
 
 export const initialFormValue: userDetailType[] = [
   {
-    category: 'Client',
+    category: 'client',
     data: [
       {
         type: 'text',
@@ -34,20 +34,20 @@ export const initialFormValue: userDetailType[] = [
       }
     ]
   },
+  // {
+  //   category: 'Due Date',
+  //   data: [
+  //     {
+  //       type: 'date',
+  //       id: '7890QRST',
+  //       value: '',
+  //       placeholder: '',
+  //       name: 'Company name'
+  //     }
+  //   ]
+  // },
   {
-    category: 'Due Date',
-    data: [
-      {
-        type: 'date',
-        id: '7890QRST',
-        value: '',
-        placeholder: '',
-        name: 'Company name'
-      }
-    ]
-  },
-  {
-    category: 'Product',
+    category: 'product',
     data: [
       {
         type: 'text',

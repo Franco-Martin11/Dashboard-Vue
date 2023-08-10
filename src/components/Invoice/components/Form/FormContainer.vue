@@ -29,18 +29,18 @@
           Create New Invoice
         </div>
       </div>
-
+      <!-- 
       <div
         class="text-[#000000] text-left relative"
         style="font: 700 32px 'Product Sans', sans-serif"
       >
         Create New Invoice
-      </div>
+      </div> -->
     </div>
     <form
       action=""
       @submit.prevent="emitirEvento"
-      :v-model="dataForm"
+      :v-model="initialFormValue"
       class="w-full flex flex-col gap-4"
     >
       <!-- Languaje dropdownd -->
@@ -48,7 +48,7 @@
       <div
         class="flex flex-col gap-5 items-start justify-start border-t border-solid pt-4 self-stretch shrink-0 relative"
       >
-        <template v-for="formData in dataForm" :key="formData.category">
+        <template v-for="formData in initialFormValue" :key="formData.category">
           <div
             class="flex flex-col gap-5 items-start justify-start self-stretch shrink-0 relative w-full"
           >
@@ -87,9 +87,9 @@
 <script setup lang="ts">
 // import { getCurrentInstance, ref, type ComponentInternalInstance, onMounted } from 'vue'
 // import { initialFormValue } from '@/constants/InitialFormState'
+import { FormDetails } from '@/stores/FormDetails'
 import FormFields from './FormFields.vue'
-import { userDetailsInvoices } from '@/composables/useDetailInvoice'
-const { setDataInvoice, data: dataForm } = userDetailsInvoices()
+const { initialFormValue, updateForm } = FormDetails()
 // defineEmits(['mi-evento', 'on-function'])
 
 // Obtén la instancia actual del componente
@@ -104,8 +104,7 @@ const { setDataInvoice, data: dataForm } = userDetailsInvoices()
 // const createInvoceToggle = ref<boolean>(false)
 // const handleToggle = () => (createInvoceToggle.value = !createInvoceToggle.value)
 const emitirEvento = () => {
-  console.log(dataForm.value)
-  setDataInvoice(dataForm.value)
+  updateForm(initialFormValue)
 }
 </script>
 

@@ -68,38 +68,38 @@ export const exampleInvoice: Invoice = {
       {
         description: 'Product A',
         timeOfHiring: 100,
-        subtotal: 500
+        subtotal: 100
       },
       {
         description: 'Product B',
         timeOfHiring: 1000,
-        subtotal: 5025
+        subtotal: 10
       },
       {
         description: 'Product c',
         timeOfHiring: 10,
-        subtotal: 50
+        subtotal: 10
       }
     ],
     subtotal: 0,
     taxes: [
       {
         name: 'Sales Tax',
-        rate: 9,
+        rate: 0.9,
         acronym: 'COST/IVA/ST @ 9%'
       },
       {
         name: 'Use Tax',
-        rate: 5,
+        rate: 0.5,
         acronym: 'UT @ 5%'
       },
       {
         name: 'Transaction Tax',
-        rate: 3.9,
+        rate: 0.39,
         acronym: 'IC/SD(Stamp-Duty)/VAT @ 3.9%'
       }
     ],
-    total: 1080
+    total: 0
   },
   additionalInfo: 'Thank you for your business!'
 }

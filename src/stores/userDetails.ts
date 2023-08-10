@@ -1,8 +1,6 @@
-import { initialFormValue } from '@/constants/InitialFormState'
-import type { userDetailType } from '@/types'
-import { exampleInvoiceEmpty, type Invoice } from '@/types/InvoiceType'
 import { defineStore } from 'pinia'
-interface initialUserData {
+
+type initialUser = {
   phoneNumber: string
   personalEmail: string
   'Tax ID': number
@@ -10,7 +8,7 @@ interface initialUserData {
   'NRIC/FIN/ID/DNI': string
 }
 
-const initialUserData = {
+const initialUserData: initialUser = {
   phoneNumber: '+1 646 980 4741',
   personalEmail: 'main.francomartin.gmail.com',
   'Tax ID': 886655122551155,
@@ -19,14 +17,7 @@ const initialUserData = {
 }
 
 export const userDetails = defineStore('userDetails', {
-  state: (): { data: userDetailType[]; userData: initialUserData; useDataEmpty: Invoice } => ({
-    data: initialFormValue,
-    userData: initialUserData,
-    useDataEmpty: exampleInvoiceEmpty
-  }),
-  actions: {
-    setFormValues(newValue: userDetailType[]) {
-      this.data = newValue
-    }
-  }
+  state: (): { userData: initialUser } => ({
+    userData: initialUserData
+  })
 })

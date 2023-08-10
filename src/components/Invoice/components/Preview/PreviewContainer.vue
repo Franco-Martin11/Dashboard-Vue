@@ -132,10 +132,10 @@
       </div>
       <!--  -->
       <div
-        class="pt-[25px] pb-[25px] flex flex-col items-start justify-between self-stretch flex-1 relative"
+        class="pt-[25px] pb-[25px] gap-2 flex flex-col items-start justify-between self-stretch flex-1 relative"
       >
         <div
-          class="border-solid border-[#000000] border-t py-5 flex flex-row items-start justify-between self-stretch shrink-0 relative"
+          class="border-solid border-[#000000] border-t pt-5 flex flex-row items-start justify-between self-stretch shrink-0 relative"
         >
           <div
             class="text-[#000000] text-left relative"
@@ -162,15 +162,14 @@
           />
         </template>
 
-        <div class="border-t border-solid py-5 w-full flex-1">
+        <div class="border-y border-solid py-4 w-full flex flex-col gap-2 flex-1">
           <template v-for="{ acronym, name, rate } in product.taxes" :key="name">
-            <!-- component -->
             <InvoiceSubtotal :acronym="acronym" :name="name" :rate="rate" />
           </template>
         </div>
 
         <div
-          class="border-solid border-[#000000] border-t py-5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative"
+          class="border-solid border-[#000000] border-b py-8 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative"
         >
           <div class="flex flex-row items-start justify-between self-stretch shrink-0 relative">
             <div
@@ -245,14 +244,16 @@
 </template>
 
 <script setup lang="ts">
-import { userDetailsInvoices } from '@/composables/useDetailInvoice'
 import { computed } from 'vue'
 import PreviewItems from './PreviewItems.vue'
 import InvoiceSubtotal from './InvoiceSubtotal.vue'
 import PreviewTextLabel from './PreviewTextLabel.vue'
+import { FormDetails } from '@/stores/FormDetails'
+import { userDetails } from '@/stores/userDetails'
 
-const { userData, useDataEmpty } = userDetailsInvoices()
-const dataComputed = computed(() => Object.entries(userData.value))
+const { useDataEmpty } = FormDetails()
+const { userData } = userDetails()
+const dataComputed = computed(() => Object.entries(userData))
 </script>
 
 <style scoped></style>
