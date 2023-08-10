@@ -1,18 +1,14 @@
 import { initialFormValue } from '@/constants/InitialFormState'
 import type { userDetailType } from '@/types'
-import {
-  exampleInvoice,
-  exampleInvoiceEmpty,
-  type Invoice as InvoiceStandar
-} from '@/types/InvoiceType'
+import { exampleInvoiceEmpty, type Invoice as InvoiceStandar } from '@/types/InvoiceType'
 import { defineStore } from 'pinia'
 
 // Define tipos para la estructura del objeto useDataEmpty
-type InvoiceDetails = {
-  invoiceNumber: string
-  issueDate: Date
-  // Otras propiedades relevantes...
-}
+// type InvoiceDetails = {
+//   invoiceNumber: string
+//   issueDate: Date
+//   // Otras propiedades relevantes...
+// }
 
 type ProductDetails = {
   description: string
@@ -20,13 +16,13 @@ type ProductDetails = {
   // Otras propiedades relevantes...
 }
 
-type ClientDetails = {
+export type ClientDetails = {
   name: string
   address: string
   // Otras propiedades relevantes...
 }
 
-interface Invoice {
+export interface Invoice {
   invoiceNumber: string
   issueDate: Date
   // Otras propiedades relevantes...

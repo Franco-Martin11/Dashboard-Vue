@@ -23,7 +23,7 @@ export const OptionLinkRouteArr: OptionLinkRoute[] = [
   {
     id: 'abc123',
     nameIcon: 'invoices',
-    textLabel: 'Invoices',
+    textLabel: 'Invoice',
     urlRoute: '/invoices'
   }
   // {

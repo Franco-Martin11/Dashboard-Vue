@@ -26,16 +26,16 @@
           class="text-[#979797] text-left relative"
           style="font: 400 14px 'Product Sans', sans-serif"
         >
-          Create New Invoice
+          Preview Invoice
         </div>
       </div>
-      <!-- 
+
       <div
         class="text-[#000000] text-left relative"
         style="font: 700 32px 'Product Sans', sans-serif"
       >
-        Create New Invoice
-      </div> -->
+        Preview Invoice
+      </div>
     </div>
     <form
       action=""
@@ -56,7 +56,7 @@
               class="text-[#15161f] text-left relative"
               style="font: 400 18px 'Product Sans Medium', sans-serif"
             >
-              {{ formData.category }}
+              {{ toUpperCase(formData.category) }}
             </h3>
 
             <template v-if="formData.data">
@@ -103,6 +103,9 @@ const { initialFormValue, updateForm } = FormDetails()
 // const handleClick = () => (formDataRef.value = initialFormValue)
 // const createInvoceToggle = ref<boolean>(false)
 // const handleToggle = () => (createInvoceToggle.value = !createInvoceToggle.value)
+const toUpperCase = (stringRaw: string): string => {
+  return stringRaw.replace(/^(.)/, (match) => match.toUpperCase())
+}
 const emitirEvento = () => {
   updateForm(initialFormValue)
 }

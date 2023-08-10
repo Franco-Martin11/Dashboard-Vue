@@ -1,13 +1,13 @@
 <template>
   <LayoutContainer>
     <template #ContainerPages>
-      <CreateInvoice />
+      <CustomerContainer />
     </template>
   </LayoutContainer>
 </template>
 
 <script setup lang="ts">
-import CreateInvoice from '@/components/Invoice/CreateInvoice.vue'
+import CustomerContainer from '@/components/Invoice/components/Customer/CustomerContainer.vue'
 import LayoutContainer from '@/components/layout/LayoutContainer.vue'
 </script>
 

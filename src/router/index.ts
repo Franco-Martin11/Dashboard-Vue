@@ -4,7 +4,7 @@ const dataRouter = OptionLinkRouteArr.map((element) => {
   return {
     path: element.urlRoute,
     name: element.nameIcon,
-    component: () => import(`../views/${element.textLabel}View.vue`)
+    component: () => import(`../views/${element.textLabel}/${element.textLabel}View.vue`)
   }
 })
 const router = createRouter({
@@ -14,8 +14,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/DashboardView.vue')
+      component: () => import('../views/Dashboard/DashboardView.vue')
     },
+
+    {
+      path: '/invoices/customer/:customerNamerQuery',
+      name: 'customer-client',
+      component: () => import('../views/Invoice/CustomerView.vue'),
+      children: [
+        {
+          path: ':id',
+          name: 'invoice-details',
+          component: () => import('../views/Invoice/InvoiceDetailsView.vue')
+        }
+      ]
+    },
+
     {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
