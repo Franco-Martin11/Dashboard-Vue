@@ -10,7 +10,7 @@ const customerNamerQuery = computed(() => props.customerName.replace(/ /g, '-').
 <template>
   <RouterLink :to="`/invoices/customer/${customerNamerQuery}`">
     <div
-      class="bg-[#f9f9f9] rounded-[9.45px] p-2.5 flex flex-row gap-2.5 items-center justify-start w-[350.23px] relative"
+      class="bg-[#f9f9f9] rounded-[9.45px] p-2.5 flex flex-row gap-2.5 items-center justify-start w-[350.23px] relative hover:shadow-lg"
     >
       <img
         class="rounded-[4.71px] shrink-0 w-[47.66px] h-[47.66px] relative"

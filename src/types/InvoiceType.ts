@@ -5,13 +5,7 @@ export interface Invoice {
   paymentTerms?: string
   provider: InvoicePartyProvider
   client: InvoiceParty
-  product: {
-    items: InvoiceItem[]
-    subtotal: number
-    taxes?: InvoiceTax[]
-    discounts?: InvoiceDiscount[]
-    total: number
-  }
+  product: ProductItem
   additionalInfo?: string
 }
 
@@ -24,6 +18,14 @@ export interface InvoiceParty {
 export interface InvoicePartyProvider extends InvoiceParty {
   product: string
   phoneNumber: string
+}
+export interface ProductItem {
+  type?: string
+  items: InvoiceItem[]
+  subtotal: number
+  taxes?: InvoiceTax[]
+  discounts?: InvoiceDiscount[]
+  total: number
 }
 
 export interface InvoiceItem {

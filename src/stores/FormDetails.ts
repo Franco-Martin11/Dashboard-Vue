@@ -1,6 +1,10 @@
 import { initialFormValue } from '@/constants/InitialFormState'
 import type { userDetailType } from '@/types'
-import { exampleInvoiceEmpty, type Invoice as InvoiceStandar } from '@/types/InvoiceType'
+import {
+  exampleInvoice,
+  exampleInvoiceEmpty,
+  type Invoice as InvoiceStandar
+} from '@/types/InvoiceType'
 import { defineStore } from 'pinia'
 
 // Define tipos para la estructura del objeto useDataEmpty
@@ -38,7 +42,7 @@ export interface Invoice {
 export const FormDetails = defineStore('FormDetails', {
   state: (): { initialFormValue: userDetailType[]; useDataEmpty: InvoiceStandar } => ({
     initialFormValue,
-    useDataEmpty: exampleInvoiceEmpty
+    useDataEmpty: exampleInvoice
   }),
   actions: {
     updateForm(newValue: userDetailType[]) {

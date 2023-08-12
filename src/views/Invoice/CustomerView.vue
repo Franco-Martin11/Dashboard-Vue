@@ -1,15 +1,19 @@
 <template>
   <LayoutContainer>
     <template #ContainerPages>
-      <LayoutNavbar titleHeading="Invoice" descriptionHeading="Create new invoice, upload and download" />
-      <div class="flex flex-col gap-5 w-full ">
-
-        <div class="flex flex-row gap-4">
-          <RouterLink :to="currentRoute.path + '?q=asdasd'"> Prueba a ver si funciona </RouterLink>
-          <button type="button" @click="back">Go Back</button>
-        </div>
+      <LayoutNavbar
+        titleHeading="Invoice"
+        descriptionHeading="Create new invoice, upload and download"
+      />
+      <div class="flex flex-col gap-5 w-full mt-10">
+        <template v-if="!currentRoute.query.q">
+          <div class="flex flex-wrap gap-4 justify-around">
+            <CustomerDetailsProduct />
+          </div>
+        </template>
 
         <template v-if="currentRoute.query.q">
+          <button type="button" @click="back">Go Back</button>
           <CreateInvoice />
         </template>
       </div>
@@ -19,9 +23,10 @@
 
 <script setup lang="ts">
 import CreateInvoice from '@/components/Invoice/CreateInvoice.vue'
+import CustomerDetailsProduct from '@/components/Invoice/components/Customer/CustomerDetailsProduct.vue'
 import LayoutContainer from '@/components/layout/LayoutContainer.vue'
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
-import { RouterLink, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
 const { currentRoute, back } = useRouter()
 </script>
 
