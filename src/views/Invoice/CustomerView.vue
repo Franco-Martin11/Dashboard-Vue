@@ -7,13 +7,14 @@
       />
       <div class="flex flex-col gap-5 w-full mt-10">
         <template v-if="!currentRoute.query.q">
-          <div class="flex flex-wrap gap-4 justify-around">
+          <button class="px-4 py-2 rounded-md bg-Pallet-Purple text-[#fff] w-fit" type="button" @click="back">Go Back</button>
+          <div class="flex flex-wrap gap-4 justify-start">
             <CustomerDetailsProduct />
           </div>
         </template>
 
         <template v-if="currentRoute.query.q">
-          <button type="button" @click="back">Go Back</button>
+          <button class="px-4 py-2 rounded-md bg-Pallet-Purple text-[#fff] w-fit" type="button" @click="back">Go Back</button>
           <CreateInvoice />
         </template>
       </div>

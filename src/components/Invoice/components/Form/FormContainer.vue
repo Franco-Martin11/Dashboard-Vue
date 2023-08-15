@@ -79,7 +79,7 @@
           </div>
         </template>
       </div>
-      <button type="submit" @click="emitirEvento">Prueba</button>
+      <!-- <button type="submit" @click="emitirEvento">Prueba</button> -->
     </form>
   </div>
 </template>

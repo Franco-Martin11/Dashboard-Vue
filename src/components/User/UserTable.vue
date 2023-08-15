@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col gap-4 items-center shadow-md rounded-[30px] flex-1 bg-[rgb(253,253,253)] p-8 w-full relative z-50"
+    class="flex flex-col gap-4 items-center shadow-md rounded-[20px] flex-1 bg-[rgb(253,253,253)] p-8 w-full relative z-50"
   >
     <div class="flex flex-col gap-4 items-center">
       <AvatarImage :url="null" :alt="'Image'" />

@@ -2,7 +2,7 @@ import { initialFormValue } from '@/constants/InitialFormState'
 import type { userDetailType } from '@/types'
 import {
   exampleInvoice,
-  exampleInvoiceEmpty,
+  // exampleInvoiceEmpty,
   type Invoice as InvoiceStandar
 } from '@/types/InvoiceType'
 import { defineStore } from 'pinia'
@@ -36,6 +36,7 @@ export interface Invoice {
     items: ProductDetails[]
     // Otras propiedades relevantes...
   }
+  [key: string]: any;
   // Otras propiedades relevantes...
 }
 
