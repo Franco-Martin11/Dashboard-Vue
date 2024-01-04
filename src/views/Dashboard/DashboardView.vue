@@ -1,7 +1,10 @@
 <template>
   <LayoutContainer>
     <template #ContainerPages>
-      <LayoutNavbar descriptionHeading="Welcome back. Let's get back to work." titleHeading="Analytics" />
+      <LayoutNavbar
+        descriptionHeading="Welcome back. Let's get back to work."
+        titleHeading="Analytics"
+      />
       <section class="flex flex-row justify-between gap-4 mt-4 flex-wrap">
         <div class="flex gap-4 flex-col my-6 flex-[1_0_350px] md:flex-[1_0_650px]">
           <BarStatsContainer />

@@ -7,14 +7,26 @@
       />
       <div class="flex flex-col gap-5 w-full mt-10">
         <template v-if="!currentRoute.query.q">
-          <button class="hover:bg-Heading-Purple transition-colors px-4 py-2 rounded-md bg-Pallet-Purple text-[#fff] w-fit" type="button" @click="back">Go Back</button>
+          <button
+            class="hover:bg-Heading-Purple transition-colors px-4 py-2 rounded-md bg-Pallet-Purple text-[#fff] w-fit"
+            type="button"
+            @click="back"
+          >
+            Go Back
+          </button>
           <div class="grid grid-cols-invoiceCardContainer gap-4 justify-start">
             <CustomerDetailsProduct />
           </div>
         </template>
 
         <template v-if="currentRoute.query.q">
-          <button class="hover:bg-Heading-Purple transition-colors px-4 py-2 rounded-md bg-Pallet-Purple text-[#fff] w-fit" type="button" @click="back">Go Back</button>
+          <button
+            class="hover:bg-Heading-Purple transition-colors px-4 py-2 rounded-md bg-Pallet-Purple text-[#fff] w-fit"
+            type="button"
+            @click="back"
+          >
+            Go Back
+          </button>
           <CreateInvoice />
         </template>
       </div>

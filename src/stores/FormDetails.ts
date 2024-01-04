@@ -36,7 +36,7 @@ export interface Invoice {
     items: ProductDetails[]
     // Otras propiedades relevantes...
   }
-  [key: string]: any;
+  [key: string]: any
   // Otras propiedades relevantes...
 }
 
