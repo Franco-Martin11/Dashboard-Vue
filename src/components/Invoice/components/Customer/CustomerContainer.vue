@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-row gap-5 mt-10 flex-wrap justify-start ">
+  <div class="flex flex-row gap-5 mt-10 flex-wrap justify-center lg:justify-start px-2">
     <div class="hidden md:flex">
       <UserTable />
     </div>
     <TabChartButton />
-    <div class="flex flex-col gap-4 items-start justify-start relative ">
+    <div class="flex flex-col gap-4 items-start justify-start relative flex-1">
 
-      <div class="flex flex-row items-center justify-between self-stretch flex-1 relative">
+      <div class="flex flex-row items-center justify-between self-stretch flex-1 relative max-w-[350px]">
         <div class="text-[#505887] text-left relative" style="font: 700 20px 'Product Sans', sans-serif">
           Latest Customers
         </div>

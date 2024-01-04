@@ -1,10 +1,7 @@
 <template>
   <LayoutContainer>
     <template #ContainerPages>
-      <LayoutNavbar
-        descriptionHeading="Welcome back. Let's get back to work."
-        titleHeading="Analytics"
-      />
+      <LayoutNavbar descriptionHeading="Welcome back. Let's get back to work." titleHeading="Analytics" />
       <section class="flex flex-row justify-between gap-4 mt-4 flex-wrap">
         <div class="flex gap-4 flex-col my-6 flex-[1_0_350px] md:flex-[1_0_650px]">
           <BarStatsContainer />
@@ -24,4 +21,8 @@ import CampaingEarnings from '@/components/StatsCard/components/CampaingEarnings
 import BarStatsContainer from '@/components/BarStats/BarStatsContainer.vue'
 import LayoutNavbar from '@/components/layout/LayoutNavbar.vue'
 import LayoutContainer from '@/components/layout/LayoutContainer.vue'
+import { useUserComposable } from '@/composables/useUserComposable'
+import { onMounted } from 'vue'
+const { setUserData } = useUserComposable()
+onMounted(() => setUserData())
 </script>

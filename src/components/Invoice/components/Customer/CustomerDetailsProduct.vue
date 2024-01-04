@@ -24,7 +24,7 @@ const valueData = computed(() => productArray[currentParams])
     <template v-for="item in items" :key="item.description">
       <RouterLink :to="'client-1' + '?q=' + item.description">
         <div
-          class="bg-[#ffffff] flex-1 w-full rounded-[9px] pt-2.5 pr-5 pb-2.5 pl-5 flex flex-col gap-2.5 items-start justify-start relative border border-[rgba(151,151,252,0.5)] hover:border-[rgba(151,151,252,0.75)] hover:shadow-lg"
+          class="bg-[#ffffff] flex-1 h-full w-full rounded-[9px] pt-2.5 pr-5 pb-2.5 pl-5 flex flex-col gap-2.5 items-start justify-start relative border border-[rgba(151,151,252,0.5)] hover:border-[rgba(151,151,252,0.75)] transition-shadow hover:shadow-lg"
         >
           <div
             class="w-full flex flex-1 items-start justify-start self-stretch shrink-0 relative overflow-visible"

@@ -38,7 +38,8 @@ module.exports = {
       },
       gridTemplateColumns: {
         // Simple 16 column grid
-        formFields: 'repeat(auto-fill, minmax(175px, 1fr))'
+        formFields: 'repeat(auto-fill, minmax(175px, 1fr))',
+        invoiceCardContainer: 'repeat(auto-fit, minmax(250px, 1fr))'
       }
     }
   },
